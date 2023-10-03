@@ -1,0 +1,23 @@
+.stx code .keyword {
+  color: rgb(127 0 85);
+  font-weight: bold;
+}
+.stx code .identifier {
+}
+.stx code .string {
+  color: rgb(0 0 255);
+}
+.stx code .number {
+  color: rgb(0 128 0);
+}
+.stx code .var {
+  color: rgb(139 69 19);
+  font-style: italic;
+}
+.stx code .operator {
+  color: rgb(0 0 128);
+}
+.stx code .layout {
+  color: rgb(63 127 95);
+  font-style: italic;
+}

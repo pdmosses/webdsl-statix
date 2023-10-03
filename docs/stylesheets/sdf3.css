@@ -1,0 +1,71 @@
+.sdf3 code .keyword {
+  color: rgb(127 0 85);
+  font-weight: bold;
+}
+.sdf3 code .identifier {
+}
+.sdf3 code .string {
+  color: rgb(0 0 255);
+}
+.sdf3 code .number {
+  color: rgb(0 128 0);
+}
+.sdf3 code .var {
+  color: rgb(139 69 19);
+  font-style: italic;
+}
+.sdf3 code .operator {
+  color: rgb(0 0 128);
+}
+.sdf3 code .layout {
+  color: rgb(63 127 95);
+  font-style: italic;
+}
+.sdf3 code .cons_String {
+  color: rgb(0 0 255);
+}
+.sdf3 code .cons_Constructor {
+  color: rgb(0 0 128);
+}
+.sdf3 code .cons_Lit {
+  color: rgb(0 0 255);
+}
+.sdf3 code .cons_CiLit {
+  color: rgb(0 0 255);
+}
+.sdf3 code .sort_Label {
+  color: rgb(128 128 128);
+}
+.sdf3 code .sort_Label.cons_Quoted {
+  color: rgb(128 128 128);
+}
+.sdf3 code .sort_Label.cons_Unquoted {
+  color: rgb(128 128 128);
+}
+.sdf3 code .cons_PosRef {
+  color: rgb(0 128 0);
+}
+.sdf3 code .cons_LabelRef {
+  color: rgb(128 128 128);
+}
+.sdf3 code .cons_LiteralRef {
+  color: rgb(0 0 255);
+}
+.sdf3 code .sort_Character {
+  color: rgb(0 0 255);
+}
+.sdf3 code .sort_Character.cons_Regular {
+  color: rgb(0 128 0);
+}
+.sdf3 code .sort_Character.cons_Binary {
+  color: rgb(127 0 85);
+}
+.sdf3 code .sort_Character.cons_Octal {
+  color: rgb(127 0 85);
+}
+.sdf3 code .sort_Character.cons_Decimal {
+  color: rgb(127 0 85);
+}
+.sdf3 code .sort_Character.cons_Hexadecimal {
+  color: rgb(127 0 85);
+}

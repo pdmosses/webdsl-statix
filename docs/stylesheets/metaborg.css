@@ -1,0 +1,11 @@
+.highlighttable .linenos  {
+  background-color: var(--md-default-bg-color);
+}
+
+.highlighttable code a {
+  color: var(--md-code-fg-color);
+}
+
+.highlighttable code a:hover {
+  color: default;
+}
