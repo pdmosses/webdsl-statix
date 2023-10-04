@@ -36,10 +36,10 @@
 .sdf3 code .sort_Label {
   color: rgb(128 128 128);
 }
-.sdf3 code .sort_Label.cons_Quoted {
+.sdf3 code .cons_Quoted {
   color: rgb(128 128 128);
 }
-.sdf3 code .sort_Label.cons_Unquoted {
+.sdf3 code .cons_Unquoted {
   color: rgb(128 128 128);
 }
 .sdf3 code .cons_PosRef {
@@ -54,18 +54,18 @@
 .sdf3 code .sort_Character {
   color: rgb(0 0 255);
 }
-.sdf3 code .sort_Character.cons_Regular {
+.sdf3 code .cons_Regular {
   color: rgb(0 128 0);
 }
-.sdf3 code .sort_Character.cons_Binary {
+.sdf3 code .cons_Binary {
   color: rgb(127 0 85);
 }
-.sdf3 code .sort_Character.cons_Octal {
+.sdf3 code .cons_Octal {
   color: rgb(127 0 85);
 }
-.sdf3 code .sort_Character.cons_Decimal {
+.sdf3 code .cons_Decimal {
   color: rgb(127 0 85);
 }
-.sdf3 code .sort_Character.cons_Hexadecimal {
+.sdf3 code .cons_Hexadecimal {
   color: rgb(127 0 85);
 }

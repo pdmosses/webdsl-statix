@@ -7,5 +7,18 @@
 }
 
 .highlighttable code a:hover {
-  color: default;
+  text-decoration: underline;
+}
+
+[data-md-color-scheme="slate"] .highlighttable code {
+  filter: invert(100%) hue-rotate(180deg);
+}
+
+[data-md-color-scheme="slate"] .highlighttable code {
+  color: hsla(200, 18%, 26%, 1);
+  background-color: hsla(200, 0%, 96%, 1);
+}
+
+[data-md-color-scheme="slate"] .highlighttable code a {
+  color: hsla(200, 18%, 26%, 1);
 }
