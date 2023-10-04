@@ -30,7 +30,7 @@ The name binding of WebDSL is specified in [Statix].
 
 !!! note "To do"
    
-    - [ ] Check for broken links
+    - [x] Check for broken links
     - [ ] Make Statix highlighting consistent with that specified in the Statix language project.
 
 [NaBL]: https://www.metaborg.org/en/latest/source/langdev/meta/lang/nabl2/nabl.html
