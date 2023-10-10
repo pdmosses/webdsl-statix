@@ -29,12 +29,12 @@ hide:
 17
 18
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix-sig.stx#signatures/WebDSL-Test-sig_707_733" id="signatures/WebDSL-Test-sig_7_33" title="Referenced at ../webdsl-statix-sig.stx line 24">signatures/WebDSL-Test-sig</a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix-sig.stx/#signatures/WebDSL-Test-sig_707_733" id="signatures/WebDSL-Test-sig_7_33" title="Referenced at ../webdsl-statix-sig.stx line 24"><span class="token sort_ModuleID">signatures/WebDSL-Test-sig</span></a>
 
 <span class="keyword">imports</span>
-  <a href="../WebDSL-Action-sig.stx#signatures/WebDSL-Action-sig_7_35" id="signatures/WebDSL-Action-sig_45_73" title="Defined at ../WebDSL-Action-sig.stx line 1">signatures/WebDSL-Action-sig</a>
-  <a href="../WebDSL-Lexical-sig.stx#signatures/WebDSL-Lexical-sig_7_36" id="signatures/WebDSL-Lexical-sig_76_105" title="Defined at ../WebDSL-Lexical-sig.stx line 1">signatures/WebDSL-Lexical-sig</a>
-  <a href="../WebDSL-Core-sig.stx#signatures/WebDSL-Core-sig_7_33" id="signatures/WebDSL-Core-sig_108_134" title="Defined at ../WebDSL-Core-sig.stx line 1">signatures/WebDSL-Core-sig</a>
+  <a href="../WebDSL-Action-sig.stx/#signatures/WebDSL-Action-sig_7_35" id="signatures/WebDSL-Action-sig_45_73" title="Defined at ../WebDSL-Action-sig.stx line 1"><span class="token sort_ModuleID">signatures/WebDSL-Action-sig</span></a>
+  <a href="../WebDSL-Lexical-sig.stx/#signatures/WebDSL-Lexical-sig_7_36" id="signatures/WebDSL-Lexical-sig_76_105" title="Defined at ../WebDSL-Lexical-sig.stx line 1"><span class="token sort_ModuleID">signatures/WebDSL-Lexical-sig</span></a>
+  <a href="../WebDSL-Core-sig.stx/#signatures/WebDSL-Core-sig_7_33" id="signatures/WebDSL-Core-sig_108_134" title="Defined at ../WebDSL-Core-sig.stx line 1"><span class="token sort_ModuleID">signatures/WebDSL-Core-sig</span></a>
 
 <span class="keyword">signature</span>
 
@@ -45,6 +45,6 @@ hide:
 <span class="keyword">signature</span>
 
   <span class="keyword">constructors</span>
-    <a href="../../../../trans/static-semantics/webdsl-actions.stx#Test_14402_14406" id="Test_202_206" title="Referenced at ../../../../trans/static-semantics/webdsl-actions.stx line 345">Test</a> : <a href="../WebDSL-Lexical-sig.stx#Id_194_196" id="Id_209_211" title="Defined at ../WebDSL-Lexical-sig.stx line 14">Id</a> * <a href="../WebDSL-Action-sig.stx#Block_255_260" id="Block_214_219" title="Defined at ../WebDSL-Action-sig.stx line 15">Block</a> -&gt; <a href="../WebDSL-Core-sig.stx#Definition_310_320" id="Definition_223_233" title="Defined at ../WebDSL-Core-sig.stx line 20">Definition</a>
-    <span id="UnnamedTest_238_249" title="Not referenced locally, nor via imports">UnnamedTest</span> : <a href="../WebDSL-Action-sig.stx#Block_255_260" id="Block_252_257" title="Defined at ../WebDSL-Action-sig.stx line 15">Block</a> -&gt; <a href="../WebDSL-Core-sig.stx#Definition_310_320" id="Definition_261_271" title="Defined at ../WebDSL-Core-sig.stx line 20">Definition</a>
+    <a href="../../../../trans/static-semantics/webdsl-actions.stx/#Test_14402_14406" id="Test_202_206" title="Referenced at ../../../../trans/static-semantics/webdsl-actions.stx line 345"><span class="token sort_OpId">Test</span></a> <span class="operator">:</span> <span class="cons_SimpleSort"><a href="../WebDSL-Lexical-sig.stx/#Id_194_196" id="Id_209_211" title="Defined at ../WebDSL-Lexical-sig.stx line 14"><span class="token sort_OpId">Id</span></a></span> <span class="operator">*</span> <span class="cons_SimpleSort"><a href="../WebDSL-Action-sig.stx/#Block_255_260" id="Block_214_219" title="Defined at ../WebDSL-Action-sig.stx line 15"><span class="token sort_OpId">Block</span></a></span> <span class="operator">-&gt;</span> <span class="cons_SimpleSort"><a href="../WebDSL-Core-sig.stx/#Definition_310_320" id="Definition_223_233" title="Defined at ../WebDSL-Core-sig.stx line 20"><span class="token sort_OpId">Definition</span></a></span>
+    <span id="UnnamedTest_238_249" title="Not referenced locally, nor via imports"><span class="token sort_OpId">UnnamedTest</span></span> <span class="operator">:</span> <span class="cons_SimpleSort"><a href="../WebDSL-Action-sig.stx/#Block_255_260" id="Block_252_257" title="Defined at ../WebDSL-Action-sig.stx line 15"><span class="token sort_OpId">Block</span></a></span> <span class="operator">-&gt;</span> <span class="cons_SimpleSort"><a href="../WebDSL-Core-sig.stx/#Definition_310_320" id="Definition_261_271" title="Defined at ../WebDSL-Core-sig.stx line 20"><span class="token sort_OpId">Definition</span></a></span>
 </code></pre></td></tr></tbody></table></div>
