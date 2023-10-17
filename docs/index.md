@@ -1,7 +1,6 @@
 # Home
 
-This website is a _[hyperlinked twin][hyperlinked twins]_ of the [Spoofax] project repository
-shown at the top right.
+This website is a _[hyperlinked twin][hyperlinked twins]_ of a [Spoofax] project repository.
 
 !!! note ""
 
