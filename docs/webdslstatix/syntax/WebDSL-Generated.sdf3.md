@@ -1,5 +1,7 @@
 ---
 title: WebDSL-Generated.sdf3
+hide:
+  - toc
 ---
 
 # `WebDSL-Generated.sdf3`
@@ -37,11 +39,11 @@ title: WebDSL-Generated.sdf3
 27
 28
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3#WebDSL-Generated_237_253" id="WebDSL-Generated_7_23" title="Referenced at ../webdsl-statix.sdf3 line 15">WebDSL-Generated</a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Generated_237_253" id="WebDSL-Generated_7_23" title="Referenced at ../webdsl-statix.sdf3 line 15">WebDSL-Generated</a>
 
 <span class="keyword">imports</span>
-  <a href="../WebDSL-Core.sdf3#WebDSL-Core_7_18" id="WebDSL-Core_35_46" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
-  <a href="../WebDSL-Lexical.sdf3#WebDSL-Lexical_7_21" id="WebDSL-Lexical_49_63" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
+  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_7_18" id="WebDSL-Core_35_46" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
+  <a href="../WebDSL-Lexical.sdf3/#WebDSL-Lexical_7_21" id="WebDSL-Lexical_49_63" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
 
 /*
   <span class="keyword">Add sort and constructors for elements that can be generated durig the desugaring phase</span>.
@@ -52,11 +54,11 @@ title: WebDSL-Generated.sdf3
 
 <span class="keyword">context-free sorts</span>
 
-  <a href="#GeneratedElement_718_734" id="GeneratedElement_349_365" title="Referenced at line 28">GeneratedElement</a>
+  <a href="#GeneratedElement_465_481" id="GeneratedElement_349_365" title="Referenced at line 22, 23, 27, 28">GeneratedElement</a>
 
 <span class="keyword">context-free syntax</span>
 
-  <a href="#GeneratedElement_718_734" id="GeneratedElement_390_406" title="Referenced at line 28">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_735_744" id="Generated_407_416" title="Referenced at line 28">Generated</a></span> = &lt;&lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_421_423" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>*&gt;&gt;
+  <a href="#GeneratedElement_465_481" id="GeneratedElement_390_406" title="Referenced at line 22, 23, 27, 28">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_645_654" id="Generated_407_416" title="Referenced at line 27, 28">Generated</a></span> = &lt;&lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_421_423" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>*&gt;&gt;
 
   <a href="#Definition_590_600" id="Definition_430_440" title="Referenced at line 27">Definition</a>.<span class="cons_Constructor"><a href="#GeneratedDefinition_601_620" id="GeneratedDefinition_441_460" title="Referenced at line 27">GeneratedDefinition</a></span> = &lt;&lt;<a href="#GeneratedElement_349_365" id="GeneratedElement_465_481" title="Defined at line 16, 20">GeneratedElement</a>&gt;&gt;
   <a href="#EntityBodyDeclaration_658_679" id="EntityBodyDeclaration_486_507" title="Referenced at line 28">EntityBodyDeclaration</a>.<span class="cons_Constructor"><a href="#GeneratedEntityBodyDeclaration_680_710" id="GeneratedEntityBodyDeclaration_508_538" title="Referenced at line 28">GeneratedEntityBodyDeclaration</a></span> = &lt;&lt;<a href="#GeneratedElement_349_365" id="GeneratedElement_543_559" title="Defined at line 16, 20">GeneratedElement</a>&gt;&gt;

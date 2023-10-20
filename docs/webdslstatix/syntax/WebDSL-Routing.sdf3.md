@@ -1,5 +1,7 @@
 ---
 title: WebDSL-Routing.sdf3
+hide:
+  - toc
 ---
 
 # `WebDSL-Routing.sdf3`
@@ -32,11 +34,11 @@ title: WebDSL-Routing.sdf3
 22
 23
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3#WebDSL-Routing_342_356" id="WebDSL-Routing_7_21" title="Referenced at ../webdsl-statix.sdf3 line 21">WebDSL-Routing</a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Routing_342_356" id="WebDSL-Routing_7_21" title="Referenced at ../webdsl-statix.sdf3 line 21">WebDSL-Routing</a>
 
 <span class="keyword">imports</span>
-  <a href="../WebDSL-Core.sdf3#WebDSL-Core_7_18" id="WebDSL-Core_33_44" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
-  <a href="../WebDSL-Action.sdf3#WebDSL-Action_7_20" id="WebDSL-Action_47_60" title="Defined at ../WebDSL-Action.sdf3 line 1">WebDSL-Action</a>
+  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_7_18" id="WebDSL-Core_33_44" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
+  <a href="../WebDSL-Action.sdf3/#WebDSL-Action_7_20" id="WebDSL-Action_47_60" title="Defined at ../WebDSL-Action.sdf3 line 1">WebDSL-Action</a>
 
 <span class="keyword">context-free sorts</span>
 
@@ -50,10 +52,10 @@ title: WebDSL-Routing.sdf3
     <span class="cons_String">}</span>
   &gt;
   <a href="#RoutingElement_167_181" id="RoutingElement_196_210" title="Referenced at line 15">RoutingElement</a>.<span class="cons_Constructor"><span id="RoutingReceive_211_225" title="Not referenced locally, nor via imports">RoutingReceive</span></span> = &lt;
-    <span class="cons_String">receive</span> &lt;<a href="../WebDSL-Core.sdf3#OptFormalArgs_113_126" id="OptFormalArgs_243_256" title="Defined at ../WebDSL-Core.sdf3 line 10, 37, 38">OptFormalArgs</a>&gt; &lt;<a href="../WebDSL-Action.sdf3#Block_145_150" id="Block_259_264" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
+    <span class="cons_String">receive</span> &lt;<a href="../WebDSL-Core.sdf3/#OptFormalArgs_113_126" id="OptFormalArgs_243_256" title="Defined at ../WebDSL-Core.sdf3 line 10, 37, 38">OptFormalArgs</a>&gt; &lt;<a href="../WebDSL-Action.sdf3/#Block_145_150" id="Block_259_264" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
   &gt;
   <a href="#RoutingElement_167_181" id="RoutingElement_272_286" title="Referenced at line 15">RoutingElement</a>.<span class="cons_Constructor"><span id="RoutingConstruct_287_303" title="Not referenced locally, nor via imports">RoutingConstruct</span></span> = &lt;
-    <span class="cons_String">construct</span> &lt;<a href="../WebDSL-Core.sdf3#OptFormalArgs_113_126" id="OptFormalArgs_323_336" title="Defined at ../WebDSL-Core.sdf3 line 10, 37, 38">OptFormalArgs</a>&gt; &lt;<a href="../WebDSL-Action.sdf3#Block_145_150" id="Block_339_344" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
+    <span class="cons_String">construct</span> &lt;<a href="../WebDSL-Core.sdf3/#OptFormalArgs_113_126" id="OptFormalArgs_323_336" title="Defined at ../WebDSL-Core.sdf3 line 10, 37, 38">OptFormalArgs</a>&gt; &lt;<a href="../WebDSL-Action.sdf3/#Block_145_150" id="Block_339_344" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
   &gt;
 
 </code></pre></td></tr></tbody></table></div>

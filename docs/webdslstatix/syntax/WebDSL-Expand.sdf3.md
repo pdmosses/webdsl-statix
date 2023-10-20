@@ -1,5 +1,7 @@
 ---
 title: WebDSL-Expand.sdf3
+hide:
+  - toc
 ---
 
 # `WebDSL-Expand.sdf3`
@@ -151,48 +153,48 @@ title: WebDSL-Expand.sdf3
 141
 142
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3#WebDSL-Expand_221_234" id="WebDSL-Expand_7_20" title="Referenced at ../webdsl-statix.sdf3 line 14">WebDSL-Expand</a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Expand_221_234" id="WebDSL-Expand_7_20" title="Referenced at ../webdsl-statix.sdf3 line 14">WebDSL-Expand</a>
 
 <span class="keyword">imports</span>
-  <a href="../WebDSL-Action.sdf3#WebDSL-Action_7_20" id="WebDSL-Action_32_45" title="Defined at ../WebDSL-Action.sdf3 line 1">WebDSL-Action</a>
-  <a href="../WebDSL-Lexical.sdf3#WebDSL-Lexical_7_21" id="WebDSL-Lexical_48_62" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
-  <a href="../WebDSL-Core.sdf3#WebDSL-Core_7_18" id="WebDSL-Core_65_76" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
-  <a href="../WebDSL-UI.sdf3#WebDSL-UI_7_16" id="WebDSL-UI_79_88" title="Defined at ../WebDSL-UI.sdf3 line 1">WebDSL-UI</a>
-  <a href="../WebDSL-DataModel.sdf3#WebDSL-DataModel_7_23" id="WebDSL-DataModel_91_107" title="Defined at ../WebDSL-DataModel.sdf3 line 1">WebDSL-DataModel</a>
-  <a href="../WebDSL-Attributes.sdf3#WebDSL-Attributes_7_24" id="WebDSL-Attributes_110_127" title="Defined at ../WebDSL-Attributes.sdf3 line 1">WebDSL-Attributes</a>
+  <a href="../WebDSL-Action.sdf3/#WebDSL-Action_7_20" id="WebDSL-Action_32_45" title="Defined at ../WebDSL-Action.sdf3 line 1">WebDSL-Action</a>
+  <a href="../WebDSL-Lexical.sdf3/#WebDSL-Lexical_7_21" id="WebDSL-Lexical_48_62" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
+  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_7_18" id="WebDSL-Core_65_76" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
+  <a href="../WebDSL-UI.sdf3/#WebDSL-UI_7_16" id="WebDSL-UI_79_88" title="Defined at ../WebDSL-UI.sdf3 line 1">WebDSL-UI</a>
+  <a href="../WebDSL-DataModel.sdf3/#WebDSL-DataModel_7_23" id="WebDSL-DataModel_91_107" title="Defined at ../WebDSL-DataModel.sdf3 line 1">WebDSL-DataModel</a>
+  <a href="../WebDSL-Attributes.sdf3/#WebDSL-Attributes_7_24" id="WebDSL-Attributes_110_127" title="Defined at ../WebDSL-Attributes.sdf3 line 1">WebDSL-Attributes</a>
 
 <span class="keyword">context-free sorts</span>
 
-  <a href="#DeriveProperty_450_464" id="DeriveProperty_151_165" title="Referenced at line 24">DeriveProperty</a> <a href="#DeriveBody_626_636" id="DeriveBody_166_176" title="Referenced at line 30">DeriveBody</a> <a href="#DeriveBodyElement_759_776" id="DeriveBodyElement_177_194" title="Referenced at line 36">DeriveBodyElement</a>
+  <a href="#DeriveProperty_287_301" id="DeriveProperty_151_165" title="Referenced at line 18, 24">DeriveProperty</a> <a href="#DeriveBody_475_485" id="DeriveBody_166_176" title="Referenced at line 24, 27, 30">DeriveBody</a> <a href="#DeriveBodyElement_759_776" id="DeriveBodyElement_177_194" title="Referenced at line 36">DeriveBodyElement</a>
 
 <span class="keyword">context-free syntax</span>
 
-  <a href="#TemplateElement_2842_2857" id="TemplateElement_219_234" title="Referenced at line 113">TemplateElement</a>.<span class="cons_Constructor"><span id="DeriveNoBody_235_247" title="Not referenced locally, nor via imports">DeriveNoBody</span></span> = &lt;
-    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_264_266" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_274_277" title="Defined at line 92">Exp</a>&gt; <span class="cons_String">for</span> <span class="cons_String">(</span> &lt;{<a href="#DeriveProperty_151_165" id="DeriveProperty_287_301" title="Defined at line 13, 33, 34">DeriveProperty</a> <span class="cons_Lit">","</span>}*&gt; <span class="cons_String">)</span>
+  <a href="#TemplateElement_838_853" id="TemplateElement_219_234" title="Referenced at line 39, 55, 69, 113">TemplateElement</a>.<span class="cons_Constructor"><span id="DeriveNoBody_235_247" title="Not referenced locally, nor via imports">DeriveNoBody</span></span> = &lt;
+    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_264_266" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_274_277" title="Defined at line 92">Exp</a>&gt; <span class="cons_String">for</span> <span class="cons_String">(</span> &lt;{<a href="#DeriveProperty_151_165" id="DeriveProperty_287_301" title="Defined at line 13, 33, 34">DeriveProperty</a> <span class="cons_Lit">","</span>}*&gt; <span class="cons_String">)</span>
   &gt;
-  <a href="#TemplateElement_2842_2857" id="TemplateElement_317_332" title="Referenced at line 113">TemplateElement</a>.<span class="cons_Constructor"><a href="#DeriveNoForNoBody_1106_1123" id="DeriveNoForNoBody_333_350" title="Referenced at line 55">DeriveNoForNoBody</a></span> = &lt;
-    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_367_369" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_377_380" title="Defined at line 92">Exp</a>&gt;
+  <a href="#TemplateElement_838_853" id="TemplateElement_317_332" title="Referenced at line 39, 55, 69, 113">TemplateElement</a>.<span class="cons_Constructor"><a href="#DeriveNoForNoBody_1106_1123" id="DeriveNoForNoBody_333_350" title="Referenced at line 55">DeriveNoForNoBody</a></span> = &lt;
+    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_367_369" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_377_380" title="Defined at line 92">Exp</a>&gt;
   &gt;
-  <a href="#TemplateElement_2842_2857" id="TemplateElement_388_403" title="Referenced at line 113">TemplateElement</a>.<span class="cons_Constructor"><span id="Derive_404_410" title="Not referenced locally, nor via imports">Derive</span></span> = &lt;
-    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_427_429" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_437_440" title="Defined at line 92">Exp</a>&gt; <span class="cons_String">for</span> <span class="cons_String">(</span> &lt;{<a href="#DeriveProperty_151_165" id="DeriveProperty_450_464" title="Defined at line 13, 33, 34">DeriveProperty</a> <span class="cons_Lit">","</span>}*&gt; <span class="cons_String">)</span> &lt;<a href="#DeriveBody_166_176" id="DeriveBody_475_485" title="Defined at line 13, 35">DeriveBody</a>&gt;
+  <a href="#TemplateElement_838_853" id="TemplateElement_388_403" title="Referenced at line 39, 55, 69, 113">TemplateElement</a>.<span class="cons_Constructor"><span id="Derive_404_410" title="Not referenced locally, nor via imports">Derive</span></span> = &lt;
+    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_427_429" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_437_440" title="Defined at line 92">Exp</a>&gt; <span class="cons_String">for</span> <span class="cons_String">(</span> &lt;{<a href="#DeriveProperty_151_165" id="DeriveProperty_450_464" title="Defined at line 13, 33, 34">DeriveProperty</a> <span class="cons_Lit">","</span>}*&gt; <span class="cons_String">)</span> &lt;<a href="#DeriveBody_166_176" id="DeriveBody_475_485" title="Defined at line 13, 35">DeriveBody</a>&gt;
   &gt;
-  <a href="#TemplateElement_2842_2857" id="TemplateElement_493_508" title="Referenced at line 113">TemplateElement</a>.<span class="cons_Constructor"><span id="DeriveNoFor_509_520" title="Not referenced locally, nor via imports">DeriveNoFor</span></span> = &lt;
-    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_537_539" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_547_550" title="Defined at line 92">Exp</a>&gt; &lt;<a href="#DeriveBody_166_176" id="DeriveBody_553_563" title="Defined at line 13, 35">DeriveBody</a>&gt;
+  <a href="#TemplateElement_838_853" id="TemplateElement_493_508" title="Referenced at line 39, 55, 69, 113">TemplateElement</a>.<span class="cons_Constructor"><span id="DeriveNoFor_509_520" title="Not referenced locally, nor via imports">DeriveNoFor</span></span> = &lt;
+    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_537_539" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">from</span> &lt;<a href="#Exp_2008_2011" id="Exp_547_550" title="Defined at line 92">Exp</a>&gt; &lt;<a href="#DeriveBody_166_176" id="DeriveBody_553_563" title="Defined at line 13, 35">DeriveBody</a>&gt;
   &gt;
-  <a href="#TemplateElement_2842_2857" id="TemplateElement_571_586" title="Referenced at line 113">TemplateElement</a>.<span class="cons_Constructor"><span id="DeriveNoFromNoFor_587_604" title="Not referenced locally, nor via imports">DeriveNoFromNoFor</span></span> = &lt;
-    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_621_623" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; &lt;<a href="#DeriveBody_166_176" id="DeriveBody_626_636" title="Defined at line 13, 35">DeriveBody</a>&gt;
+  <a href="#TemplateElement_838_853" id="TemplateElement_571_586" title="Referenced at line 39, 55, 69, 113">TemplateElement</a>.<span class="cons_Constructor"><span id="DeriveNoFromNoFor_587_604" title="Not referenced locally, nor via imports">DeriveNoFromNoFor</span></span> = &lt;
+    <span class="cons_String">derive</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_621_623" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; &lt;<a href="#DeriveBody_166_176" id="DeriveBody_626_636" title="Defined at line 13, 35">DeriveBody</a>&gt;
   &gt;
 
-  <a href="#DeriveProperty_450_464" id="DeriveProperty_645_659" title="Referenced at line 24">DeriveProperty</a>.<span class="cons_Constructor"><span id="DeriveDefault_660_673" title="Not referenced locally, nor via imports">DeriveDefault</span></span> = <a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_676_678" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>
-  <a href="#DeriveProperty_450_464" id="DeriveProperty_681_695" title="Referenced at line 24">DeriveProperty</a>.<span class="cons_Constructor"><span id="DeriveMode_696_706" title="Not referenced locally, nor via imports">DeriveMode</span></span> = &lt;&lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_711_713" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">(</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_718_720" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">)</span>&gt;
-  <a href="#DeriveBody_626_636" id="DeriveBody_727_737" title="Referenced at line 30">DeriveBody</a>.<span class="cons_Constructor"><span id="DeriveBody_738_748" title="Not referenced locally, nor via imports">DeriveBody</span></span> = &lt;<span class="cons_String">{</span>
+  <a href="#DeriveProperty_287_301" id="DeriveProperty_645_659" title="Referenced at line 18, 24">DeriveProperty</a>.<span class="cons_Constructor"><span id="DeriveDefault_660_673" title="Not referenced locally, nor via imports">DeriveDefault</span></span> = <a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_676_678" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>
+  <a href="#DeriveProperty_287_301" id="DeriveProperty_681_695" title="Referenced at line 18, 24">DeriveProperty</a>.<span class="cons_Constructor"><span id="DeriveMode_696_706" title="Not referenced locally, nor via imports">DeriveMode</span></span> = &lt;&lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_711_713" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">(</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_718_720" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">)</span>&gt;
+  <a href="#DeriveBody_475_485" id="DeriveBody_727_737" title="Referenced at line 24, 27, 30">DeriveBody</a>.<span class="cons_Constructor"><span id="DeriveBody_738_748" title="Not referenced locally, nor via imports">DeriveBody</span></span> = &lt;<span class="cons_String">{</span>
     &lt;<a href="#DeriveBodyElement_177_194" id="DeriveBodyElement_759_776" title="Defined at line 13, 38">DeriveBodyElement</a>*&gt;
   <span class="cons_String">}</span>&gt;
   <a href="#DeriveBodyElement_759_776" id="DeriveBodyElement_786_803" title="Referenced at line 36">DeriveBodyElement</a>.<span class="cons_Constructor"><span id="DeriveBodyElement_804_821" title="Not referenced locally, nor via imports">DeriveBodyElement</span></span> = &lt;
-    &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_831_833" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">{</span> &lt;<a href="#TemplateElement_219_234" id="TemplateElement_838_853" title="Defined at line 17, 20, 23, 26, 29, 67">TemplateElement</a>*&gt; <span class="cons_String">}</span>
+    &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_831_833" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">{</span> &lt;<a href="#TemplateElement_219_234" id="TemplateElement_838_853" title="Defined at line 17, 20, 23, 26, 29, 67">TemplateElement</a>*&gt; <span class="cons_String">}</span>
   &gt;
 
-  <a href="#Definition_1983_1993" id="Definition_865_875" title="Referenced at line 89">Definition</a>.<span class="cons_Constructor"><span id="DeriveCrud_876_886" title="Not referenced locally, nor via imports">DeriveCrud</span></span> = &lt;<span class="cons_String">derive</span> <span class="cons_String">crud</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_903_905" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt;&gt; {<span class="keyword">case-insensitive</span>}
+  <a href="#Definition_1336_1346" id="Definition_865_875" title="Referenced at line 64, 89">Definition</a>.<span class="cons_Constructor"><span id="DeriveCrud_876_886" title="Not referenced locally, nor via imports">DeriveCrud</span></span> = &lt;<span class="cons_String">derive</span> <span class="cons_String">crud</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_903_905" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt;&gt; {<span class="keyword">case-insensitive</span>}
 
 <span class="keyword">context-free syntax</span>
 
@@ -205,19 +207,19 @@ title: WebDSL-Expand.sdf3
 
 <span class="keyword">context-free priorities</span>
 
-  <a href="#TemplateElement_219_234" id="TemplateElement_1090_1105" title="Defined at line 17, 20, 23, 26, 29, 67">TemplateElement</a>.<span class="cons_Constructor"><a href="#DeriveNoForNoBody_333_350" id="DeriveNoForNoBody_1106_1123" title="Defined at line 20">DeriveNoForNoBody</a></span> &lt;3&gt; .&gt; <a href="#Exp_2008_2011" id="Exp_1131_1134" title="Defined at line 92">Exp</a>.<span class="cons_Constructor"><a href="../WebDSL-Action.sdf3#ObjectCreation_4155_4169" id="ObjectCreation_1135_1149" title="Defined at ../WebDSL-Action.sdf3 line 214">ObjectCreation</a></span>
+  <a href="#TemplateElement_219_234" id="TemplateElement_1090_1105" title="Defined at line 17, 20, 23, 26, 29, 67">TemplateElement</a>.<span class="cons_Constructor"><a href="#DeriveNoForNoBody_333_350" id="DeriveNoForNoBody_1106_1123" title="Defined at line 20">DeriveNoForNoBody</a></span> &lt;3&gt; .&gt; <a href="#Exp_2008_2011" id="Exp_1131_1134" title="Defined at line 92">Exp</a>.<span class="cons_Constructor"><a href="../WebDSL-Action.sdf3/#ObjectCreation_4155_4169" id="ObjectCreation_1135_1149" title="Defined at ../WebDSL-Action.sdf3 line 214">ObjectCreation</a></span>
 
 <span class="keyword">context-free syntax</span>
 
-  <a href="#Definition_1983_1993" id="Definition_1174_1184" title="Referenced at line 89">Definition</a>.<span class="cons_Constructor"><span id="ExpandTemplateCall_1185_1203" title="Not referenced locally, nor via imports">ExpandTemplateCall</span></span> = &lt;
-    <span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_1220_1228" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_1235_1237" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt;
+  <a href="#Definition_1336_1346" id="Definition_1174_1184" title="Referenced at line 64, 89">Definition</a>.<span class="cons_Constructor"><span id="ExpandTemplateCall_1185_1203" title="Not referenced locally, nor via imports">ExpandTemplateCall</span></span> = &lt;
+    <span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_1220_1228" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_1235_1237" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt;
   &gt;
-  <a href="#Definition_1983_1993" id="Definition_1245_1255" title="Referenced at line 89">Definition</a>.<span class="cons_Constructor"><span id="ExpandTemplateDefinition_1256_1280" title="Not referenced locally, nor via imports">ExpandTemplateDefinition</span></span> = &lt;
-    <span class="cons_String">expandtemplate</span> &lt;<a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_1305_1307" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_1313_1324" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span>
+  <a href="#Definition_1336_1346" id="Definition_1245_1255" title="Referenced at line 64, 89">Definition</a>.<span class="cons_Constructor"><span id="ExpandTemplateDefinition_1256_1280" title="Not referenced locally, nor via imports">ExpandTemplateDefinition</span></span> = &lt;
+    <span class="cons_String">expandtemplate</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_1305_1307" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_1313_1324" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span>
       &lt;<a href="#Definition_865_875" id="Definition_1336_1346" title="Defined at line 42, 59, 62, 87">Definition</a>*&gt;
     <span class="cons_String">}</span>
   &gt;
-  <a href="#TemplateElement_2842_2857" id="TemplateElement_1361_1376" title="Referenced at line 113">TemplateElement</a>.<span class="cons_Constructor"><span id="TemplateElementExpandLocal_1377_1403" title="Not referenced locally, nor via imports">TemplateElementExpandLocal</span></span> = &lt;
+  <a href="#TemplateElement_838_853" id="TemplateElement_1361_1376" title="Referenced at line 39, 55, 69, 113">TemplateElement</a>.<span class="cons_Constructor"><span id="TemplateElementExpandLocal_1377_1403" title="Not referenced locally, nor via imports">TemplateElementExpandLocal</span></span> = &lt;
     <span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_1420_1428" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_1435_1446" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span>
       &lt;<a href="#TemplateElement_219_234" id="TemplateElement_1458_1473" title="Defined at line 17, 20, 23, 26, 29, 67">TemplateElement</a>*&gt;
     <span class="cons_String">}</span>
@@ -237,12 +239,12 @@ title: WebDSL-Expand.sdf3
       &lt;<a href="#ObjectPropertyAssignment_1742_1766" id="ObjectPropertyAssignment_1857_1881" title="Defined at line 82">ObjectPropertyAssignment</a>*&gt;
     <span class="cons_String">}</span>
   &gt;
-  <a href="#Definition_1983_1993" id="Definition_1896_1906" title="Referenced at line 89">Definition</a>.<span class="cons_Constructor"><span id="DefinitionExpandLocal_1907_1928" title="Not referenced locally, nor via imports">DefinitionExpandLocal</span></span> = &lt;
+  <a href="#Definition_1336_1346" id="Definition_1896_1906" title="Referenced at line 64, 89">Definition</a>.<span class="cons_Constructor"><span id="DefinitionExpandLocal_1907_1928" title="Not referenced locally, nor via imports">DefinitionExpandLocal</span></span> = &lt;
     <span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_1945_1953" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_1960_1971" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span>
       &lt;<a href="#Definition_865_875" id="Definition_1983_1993" title="Defined at line 42, 59, 62, 87">Definition</a>*&gt;
     <span class="cons_String">}</span>
   &gt;
-  <a href="#Exp_2070_2073" id="Exp_2008_2011" title="Referenced at line 92">Exp</a>.<span class="cons_Constructor"><span id="ExpExpandLocal_2012_2026" title="Not referenced locally, nor via imports">ExpExpandLocal</span></span> = &lt;<span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_2038_2046" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2053_2064" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span> &lt;<a href="#Exp_2008_2011" id="Exp_2070_2073" title="Defined at line 92">Exp</a>&gt; <span class="cons_String">}</span>&gt;
+  <a href="#Exp_274_277" id="Exp_2008_2011" title="Referenced at line 18, 21, 24, 27, 55, 92">Exp</a>.<span class="cons_Constructor"><span id="ExpExpandLocal_2012_2026" title="Not referenced locally, nor via imports">ExpExpandLocal</span></span> = &lt;<span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_2038_2046" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2053_2064" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span> &lt;<a href="#Exp_2008_2011" id="Exp_2070_2073" title="Defined at line 92">Exp</a>&gt; <span class="cons_String">}</span>&gt;
   <a href="#Attribute_2154_2163" id="Attribute_2080_2089" title="Referenced at line 93">Attribute</a>.<span class="cons_Constructor"><span id="AttributeExpandLocal_2090_2110" title="Not referenced locally, nor via imports">AttributeExpandLocal</span></span> = &lt;<span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_2122_2130" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2137_2148" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span> &lt;<a href="#Attribute_2080_2089" id="Attribute_2154_2163" title="Defined at line 93">Attribute</a>&gt; <span class="cons_String">}</span>&gt;
   <a href="#PropertyAssignment_2262_2280" id="PropertyAssignment_2170_2188" title="Referenced at line 94">PropertyAssignment</a>.<span class="cons_Constructor"><span id="PropertyAssignmentExpandLocal_2189_2218" title="Not referenced locally, nor via imports">PropertyAssignmentExpandLocal</span></span> = &lt;<span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_2230_2238" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2245_2256" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span> &lt;<a href="#PropertyAssignment_2170_2188" id="PropertyAssignment_2262_2280" title="Defined at line 94">PropertyAssignment</a>&gt; <span class="cons_String">}</span>&gt;
   <a href="#FormalArg_2361_2370" id="FormalArg_2287_2296" title="Referenced at line 95">FormalArg</a>.<span class="cons_Constructor"><span id="FormalArgExpandLocal_2297_2317" title="Not referenced locally, nor via imports">FormalArgExpandLocal</span></span> = &lt;<span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_2329_2337" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2344_2355" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span> &lt;<a href="#FormalArg_2287_2296" id="FormalArg_2361_2370" title="Defined at line 95">FormalArg</a>&gt; <span class="cons_String">}</span>&gt;
@@ -258,7 +260,7 @@ title: WebDSL-Expand.sdf3
   &gt;
   <span id="TypeCaseAlt_2599_2610" title="Not referenced locally, nor via imports">TypeCaseAlt</span>.<span class="cons_Constructor"><span id="TypeCaseAltExpandLocal_2611_2633" title="Not referenced locally, nor via imports">TypeCaseAltExpandLocal</span></span> = &lt;
     <span class="cons_String">expand</span> &lt;<a href="#ExpandId_2892_2900" id="ExpandId_2650_2658" title="Defined at line 121, 125, 128, 129, 130, 131">ExpandId</a>+&gt; <span class="cons_String">to</span> &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2665_2676" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>+&gt; <span class="cons_String">{</span>
-      &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2688_2699" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>&gt; &lt;<a href="../WebDSL-Action.sdf3#Block_145_150" id="Block_2702_2707" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
+      &lt;<a href="#ExpandArgId_2901_2912" id="ExpandArgId_2688_2699" title="Defined at line 121, 126, 133, 134, 135, 136">ExpandArgId</a>&gt; &lt;<a href="../WebDSL-Action.sdf3/#Block_145_150" id="Block_2702_2707" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
     <span class="cons_String">}</span>
   &gt;
   <span id="TemplateTypeCaseAlt_2721_2740" title="Not referenced locally, nor via imports">TemplateTypeCaseAlt</span>.<span class="cons_Constructor"><span id="TemplateTypeCaseAltExpandLocal_2741_2771" title="Not referenced locally, nor via imports">TemplateTypeCaseAltExpandLocal</span></span> = &lt;
@@ -271,22 +273,22 @@ title: WebDSL-Expand.sdf3
 
 <span class="keyword">lexical sorts</span>
 
-  <a href="#ExpandId_3312_3320" id="ExpandId_2892_2900" title="Referenced at line 142">ExpandId</a> <a href="#ExpandArgId_2826_2837" id="ExpandArgId_2901_2912" title="Referenced at line 113">ExpandArgId</a>
+  <a href="#ExpandId_1220_1228" id="ExpandId_2892_2900" title="Referenced at line 60, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 112, 142">ExpandId</a> <a href="#ExpandArgId_1313_1324" id="ExpandArgId_2901_2912" title="Referenced at line 63, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 108, 112, 113">ExpandArgId</a>
 
 <span class="keyword">lexical syntax</span>
 
-  <a href="#ExpandId_3312_3320" id="ExpandId_2932_2940" title="Referenced at line 142">ExpandId</a> = [<span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_\-]+
-  <a href="#ExpandArgId_2826_2837" id="ExpandArgId_2962_2973" title="Referenced at line 113">ExpandArgId</a> = <a href="../WebDSL-Lexical.sdf3#Id_86_88" id="Id_2976_2978" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>
+  <a href="#ExpandId_1220_1228" id="ExpandId_2932_2940" title="Referenced at line 60, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 112, 142">ExpandId</a> = [<span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_\-]+
+  <a href="#ExpandArgId_1313_1324" id="ExpandArgId_2962_2973" title="Referenced at line 63, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 108, 112, 113">ExpandArgId</a> = <a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_2976_2978" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>
 
-  <a href="#ExpandId_3312_3320" id="ExpandId_2982_2990" title="Referenced at line 142">ExpandId</a> = <span class="cons_Lit">"expandtemplate"</span> {<span class="keyword">reject</span>}
-  <a href="#ExpandId_3312_3320" id="ExpandId_3021_3029" title="Referenced at line 142">ExpandId</a> = <span class="cons_Lit">"template"</span> {<span class="keyword">reject</span>}
-  <a href="#ExpandId_3312_3320" id="ExpandId_3054_3062" title="Referenced at line 142">ExpandId</a> = <span class="cons_Lit">"expand"</span> {<span class="keyword">reject</span>}
-  <a href="#ExpandId_3312_3320" id="ExpandId_3085_3093" title="Referenced at line 142">ExpandId</a> = <span class="cons_Lit">"to"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandId_1220_1228" id="ExpandId_2982_2990" title="Referenced at line 60, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 112, 142">ExpandId</a> = <span class="cons_Lit">"expandtemplate"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandId_1220_1228" id="ExpandId_3021_3029" title="Referenced at line 60, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 112, 142">ExpandId</a> = <span class="cons_Lit">"template"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandId_1220_1228" id="ExpandId_3054_3062" title="Referenced at line 60, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 112, 142">ExpandId</a> = <span class="cons_Lit">"expand"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandId_1220_1228" id="ExpandId_3085_3093" title="Referenced at line 60, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 112, 142">ExpandId</a> = <span class="cons_Lit">"to"</span> {<span class="keyword">reject</span>}
 
-  <a href="#ExpandArgId_2826_2837" id="ExpandArgId_3113_3124" title="Referenced at line 113">ExpandArgId</a> = <span class="cons_Lit">"expandtemplate"</span> {<span class="keyword">reject</span>}
-  <a href="#ExpandArgId_2826_2837" id="ExpandArgId_3155_3166" title="Referenced at line 113">ExpandArgId</a> = <span class="cons_Lit">"template"</span> {<span class="keyword">reject</span>}
-  <a href="#ExpandArgId_2826_2837" id="ExpandArgId_3191_3202" title="Referenced at line 113">ExpandArgId</a> = <span class="cons_Lit">"expand"</span> {<span class="keyword">reject</span>}
-  <a href="#ExpandArgId_2826_2837" id="ExpandArgId_3225_3236" title="Referenced at line 113">ExpandArgId</a> = <span class="cons_Lit">"to"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandArgId_1313_1324" id="ExpandArgId_3113_3124" title="Referenced at line 63, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 108, 112, 113">ExpandArgId</a> = <span class="cons_Lit">"expandtemplate"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandArgId_1313_1324" id="ExpandArgId_3155_3166" title="Referenced at line 63, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 108, 112, 113">ExpandArgId</a> = <span class="cons_Lit">"template"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandArgId_1313_1324" id="ExpandArgId_3191_3202" title="Referenced at line 63, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 108, 112, 113">ExpandArgId</a> = <span class="cons_Lit">"expand"</span> {<span class="keyword">reject</span>}
+  <a href="#ExpandArgId_1313_1324" id="ExpandArgId_3225_3236" title="Referenced at line 63, 68, 73, 78, 83, 88, 92, 93, 94, 95, 97, 102, 107, 108, 112, 113">ExpandArgId</a> = <span class="cons_Lit">"to"</span> {<span class="keyword">reject</span>}
 
   <span id="TemplateId_3256_3266" title="Not referenced locally, nor via imports">TemplateId</span> = <span class="cons_Lit">"expand"</span> {<span class="keyword">reject</span>}
 
