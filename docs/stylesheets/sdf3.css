@@ -1,71 +1,114 @@
-.sdf3 code .keyword {
+.sdf3 .keyword {
   color: rgb(127 0 85);
   font-weight: bold;
+  font-style: normal;
 }
-.sdf3 code .identifier {
+.sdf3 .identifier {
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .string {
+.sdf3 .string {
   color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .number {
+.sdf3 .number {
   color: rgb(0 128 0);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .var {
+.sdf3 .var {
   color: rgb(139 69 19);
+  font-weight: normal;
   font-style: italic;
 }
-.sdf3 code .operator {
+.sdf3 .operator {
   color: rgb(0 0 128);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .layout {
+.sdf3 .layout {
   color: rgb(63 127 95);
+  font-weight: normal;
   font-style: italic;
 }
-.sdf3 code .cons_String {
+.sdf3 .cons_String, .sdf3 .cons_String > * > .token {
   color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Constructor {
+.sdf3 .cons_Constructor, .sdf3 .cons_Constructor > * > .token {
   color: rgb(0 0 128);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Lit {
+.sdf3 .cons_Lit, .sdf3 .cons_Lit > * > .token {
   color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_CiLit {
+.sdf3 .cons_CiLit, .sdf3 .cons_CiLit > * > .token {
   color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .sort_Label {
+.sdf3 .sort_Label {
   color: rgb(128 128 128);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Quoted {
+.sdf3 .cons_Quoted, .sdf3 .cons_Quoted > * > .token {
   color: rgb(128 128 128);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Unquoted {
+.sdf3 .cons_Unquoted, .sdf3 .cons_Unquoted > * > .token {
   color: rgb(128 128 128);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_PosRef {
+.sdf3 .cons_PosRef, .sdf3 .cons_PosRef > * > .token {
   color: rgb(0 128 0);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_LabelRef {
+.sdf3 .cons_LabelRef, .sdf3 .cons_LabelRef > * > .token {
   color: rgb(128 128 128);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_LiteralRef {
+.sdf3 .cons_LiteralRef, .sdf3 .cons_LiteralRef > * > .token {
   color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .sort_Character {
+.sdf3 .sort_Character {
   color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Regular {
+.sdf3 .cons_Regular, .sdf3 .cons_Regular > * > .token {
   color: rgb(0 128 0);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Binary {
+.sdf3 .cons_Binary, .sdf3 .cons_Binary > * > .token {
   color: rgb(127 0 85);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Octal {
+.sdf3 .cons_Octal, .sdf3 .cons_Octal > * > .token {
   color: rgb(127 0 85);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Decimal {
+.sdf3 .cons_Decimal, .sdf3 .cons_Decimal > * > .token {
   color: rgb(127 0 85);
+  font-weight: normal;
+  font-style: normal;
 }
-.sdf3 code .cons_Hexadecimal {
+.sdf3 .cons_Hexadecimal, .sdf3 .cons_Hexadecimal > * > .token {
   color: rgb(127 0 85);
+  font-weight: normal;
+  font-style: normal;
 }

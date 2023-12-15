@@ -39,11 +39,11 @@ hide:
 27
 28
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Generated_237_253" id="WebDSL-Generated_7_23" title="Referenced at ../webdsl-statix.sdf3 line 15">WebDSL-Generated</a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Generated_15_3" id="WebDSL-Generated_1_8" title="Referenced at ../webdsl-statix.sdf3 line 15">WebDSL-Generated</a>
 
 <span class="keyword">imports</span>
-  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_7_18" id="WebDSL-Core_35_46" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
-  <a href="../WebDSL-Lexical.sdf3/#WebDSL-Lexical_7_21" id="WebDSL-Lexical_49_63" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
+  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_1_8" id="WebDSL-Core_4_3" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
+  <a href="../WebDSL-Lexical.sdf3/#WebDSL-Lexical_1_8" id="WebDSL-Lexical_5_3" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
 
 /*
   <span class="keyword">Add sort and constructors for elements that can be generated durig the desugaring phase</span>.
@@ -54,18 +54,27 @@ hide:
 
 <span class="keyword">context-free sorts</span>
 
-  <a href="#GeneratedElement_465_481" id="GeneratedElement_349_365" title="Referenced at line 22, 23, 27, 28">GeneratedElement</a>
+  <a href="#GeneratedElement_22_38" id="GeneratedElement_16_3" title="Referenced at line 22, 23, 27, 28">GeneratedElement</a>
 
 <span class="keyword">context-free syntax</span>
 
-  <a href="#GeneratedElement_465_481" id="GeneratedElement_390_406" title="Referenced at line 22, 23, 27, 28">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_645_654" id="Generated_407_416" title="Referenced at line 27, 28">Generated</a></span> = &lt;&lt;<a href="../WebDSL-Lexical.sdf3/#Id_86_88" id="Id_421_423" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>*&gt;&gt;
+  <a href="#GeneratedElement_22_38" id="GeneratedElement_20_3" title="Referenced at line 22, 23, 27, 28">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_27_58" id="Generated_20_20" title="Referenced at line 27, 28">Generated</a></span> = &lt;&lt;<a href="../WebDSL-Lexical.sdf3/#Id_5_49" id="Id_20_34" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>*&gt;&gt;
 
-  <a href="#Definition_590_600" id="Definition_430_440" title="Referenced at line 27">Definition</a>.<span class="cons_Constructor"><a href="#GeneratedDefinition_601_620" id="GeneratedDefinition_441_460" title="Referenced at line 27">GeneratedDefinition</a></span> = &lt;&lt;<a href="#GeneratedElement_349_365" id="GeneratedElement_465_481" title="Defined at line 16, 20">GeneratedElement</a>&gt;&gt;
-  <a href="#EntityBodyDeclaration_658_679" id="EntityBodyDeclaration_486_507" title="Referenced at line 28">EntityBodyDeclaration</a>.<span class="cons_Constructor"><a href="#GeneratedEntityBodyDeclaration_680_710" id="GeneratedEntityBodyDeclaration_508_538" title="Referenced at line 28">GeneratedEntityBodyDeclaration</a></span> = &lt;&lt;<a href="#GeneratedElement_349_365" id="GeneratedElement_543_559" title="Defined at line 16, 20">GeneratedElement</a>&gt;&gt;
+  <a href="#Definition_27_3" id="Definition_22_3" title="Referenced at line 27">Definition</a>.<span class="cons_Constructor"><a href="#GeneratedDefinition_27_14" id="GeneratedDefinition_22_14" title="Referenced at line 27">GeneratedDefinition</a></span> = &lt;&lt;<a href="#GeneratedElement_16_3" id="GeneratedElement_22_38" title="Defined at line 16, 20">GeneratedElement</a>&gt;&gt;
+  <a href="#EntityBodyDeclaration_28_3" id="EntityBodyDeclaration_23_3" title="Referenced at line 28">EntityBodyDeclaration</a>.<span class="cons_Constructor"><a href="#GeneratedEntityBodyDeclaration_28_25" id="GeneratedEntityBodyDeclaration_23_25" title="Referenced at line 28">GeneratedEntityBodyDeclaration</a></span> = &lt;&lt;<a href="#GeneratedElement_16_3" id="GeneratedElement_23_60" title="Defined at line 16, 20">GeneratedElement</a>&gt;&gt;
 
 <span class="keyword">context-free priorities</span>
 
-  <a href="#Definition_430_440" id="Definition_590_600" title="Defined at line 22">Definition</a>.<span class="cons_Constructor"><a href="#GeneratedDefinition_441_460" id="GeneratedDefinition_601_620" title="Defined at line 22">GeneratedDefinition</a></span> &lt;0&gt; .&gt; <a href="#GeneratedElement_349_365" id="GeneratedElement_628_644" title="Defined at line 16, 20">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_407_416" id="Generated_645_654" title="Defined at line 20">Generated</a></span>,
-  <a href="#EntityBodyDeclaration_486_507" id="EntityBodyDeclaration_658_679" title="Defined at line 23">EntityBodyDeclaration</a>.<span class="cons_Constructor"><a href="#GeneratedEntityBodyDeclaration_508_538" id="GeneratedEntityBodyDeclaration_680_710" title="Defined at line 23">GeneratedEntityBodyDeclaration</a></span> &lt;0&gt; .&gt; <a href="#GeneratedElement_349_365" id="GeneratedElement_718_734" title="Defined at line 16, 20">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_407_416" id="Generated_735_744" title="Defined at line 20">Generated</a></span>
+  <a href="#Definition_22_3" id="Definition_27_3" title="Defined at line 22">Definition</a>.<span class="cons_Constructor"><a href="#GeneratedDefinition_22_14" id="GeneratedDefinition_27_14" title="Defined at line 22">GeneratedDefinition</a></span> &lt;0&gt; .&gt; <a href="#GeneratedElement_16_3" id="GeneratedElement_27_41" title="Defined at line 16, 20">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_20_20" id="Generated_27_58" title="Defined at line 20">Generated</a></span>,
+  <a href="#EntityBodyDeclaration_23_3" id="EntityBodyDeclaration_28_3" title="Defined at line 23">EntityBodyDeclaration</a>.<span class="cons_Constructor"><a href="#GeneratedEntityBodyDeclaration_23_25" id="GeneratedEntityBodyDeclaration_28_25" title="Defined at line 23">GeneratedEntityBodyDeclaration</a></span> &lt;0&gt; .&gt; <a href="#GeneratedElement_16_3" id="GeneratedElement_28_63" title="Defined at line 16, 20">GeneratedElement</a>.<span class="cons_Constructor"><a href="#Generated_20_20" id="Generated_28_80" title="Defined at line 20">Generated</a></span>
 
 </code></pre></td></tr></tbody></table></div>
+
+<div id="modal">
+  <div id="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-h2"></h2>
+    <p  id="modal-p"></p>
+    <ul id="modal-ul"></ul>
+  </div>
+</div>

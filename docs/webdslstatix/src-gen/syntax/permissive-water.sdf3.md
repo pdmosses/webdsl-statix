@@ -39,32 +39,41 @@ hide:
 27
 28
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <span id="permissive-water_7_23" title="Not referenced locally, nor via imports">permissive-water</span>
+<td class="code"><pre><code><span class="keyword">module</span> <span id="permissive-water_1_8" title="Not referenced">permissive-water</span>
 
 <span class="layout">// Key idea: WATER is the inverse of LAYOUT</span>
 
 <span class="keyword">context-free syntax</span>
   <span class="layout">// Allow WATER on places where LAYOUT may occur</span>
-  <span class="keyword">LAYOUT</span>.<span class="cons_Constructor">WATER</span> = <a href="#WATER_180_185" id="WATER_157_162" title="Defined at line 10, 17, 18">WATER</a>
+  <span class="keyword">LAYOUT</span>.<span class="cons_Constructor">WATER</span> = <a href="#WATER_10_3" id="WATER_7_18" title="Defined at line 10, 17, 18">WATER</a>
 
 <span class="keyword">lexical sorts</span>
-  <a href="#WATER_157_162" id="WATER_180_185" title="Referenced at line 7">WATER</a>
-  <a href="#WATERTOKEN_344_354" id="WATERTOKEN_188_198" title="Referenced at line 17, 28">WATERTOKEN</a>
-  <a href="#WATERTOKENSTART_449_464" id="WATERTOKENSTART_201_216" title="Referenced at line 21">WATERTOKENSTART</a>
-  <a href="#WATERTOKENSEPARATOR_365_384" id="WATERTOKENSEPARATOR_219_238" title="Referenced at line 18">WATERTOKENSEPARATOR</a>
+  <a href="#WATER_7_18" id="WATER_10_3" title="Referenced at line 7">WATER</a>
+  <a href="#WATERTOKEN_17_11" id="WATERTOKEN_11_3" title="Referenced at line 17, 28">WATERTOKEN</a>
+  <a href="#WATERTOKENSTART_21_21" id="WATERTOKENSTART_12_3" title="Referenced at line 21">WATERTOKENSTART</a>
+  <a href="#WATERTOKENSEPARATOR_18_11" id="WATERTOKENSEPARATOR_13_3" title="Referenced at line 18">WATERTOKENSEPARATOR</a>
 
 <span class="keyword">lexical syntax</span>
   <span class="layout">// Separate water regions into smaller chunks for recovery costs calculation</span>
-  <a href="#WATER_157_162" id="WATER_336_341" title="Referenced at line 7">WATER</a> = <a href="#WATERTOKEN_188_198" id="WATERTOKEN_344_354" title="Defined at line 11, 21">WATERTOKEN</a>
-  <a href="#WATER_157_162" id="WATER_357_362" title="Referenced at line 7">WATER</a> = <a href="#WATERTOKENSEPARATOR_219_238" id="WATERTOKENSEPARATOR_365_384" title="Defined at line 13, 25">WATERTOKENSEPARATOR</a>
+  <a href="#WATER_7_18" id="WATER_17_3" title="Referenced at line 7">WATER</a> = <a href="#WATERTOKEN_11_3" id="WATERTOKEN_17_11" title="Defined at line 11, 21">WATERTOKEN</a>
+  <a href="#WATER_7_18" id="WATER_18_3" title="Referenced at line 7">WATER</a> = <a href="#WATERTOKENSEPARATOR_13_3" id="WATERTOKENSEPARATOR_18_11" title="Defined at line 13, 25">WATERTOKENSEPARATOR</a>
 
   <span class="layout">// Allow to skip over identifier strings</span>
-  <a href="#WATERTOKEN_344_354" id="WATERTOKEN_431_441" title="Referenced at line 17, 28">WATERTOKEN</a>      = <a href="#WATERTOKENSTART_201_216" id="WATERTOKENSTART_449_464" title="Defined at line 12, 22">WATERTOKENSTART</a> [<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_]*
-  <a href="#WATERTOKENSTART_449_464" id="WATERTOKENSTART_482_497" title="Referenced at line 21">WATERTOKENSTART</a> = [<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_] {<span class="keyword">recover</span>}
+  <a href="#WATERTOKEN_17_11" id="WATERTOKEN_21_3" title="Referenced at line 17, 28">WATERTOKEN</a>      = <a href="#WATERTOKENSTART_12_3" id="WATERTOKENSTART_21_21" title="Defined at line 12, 22">WATERTOKENSTART</a> [<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_]*
+  <a href="#WATERTOKENSTART_21_21" id="WATERTOKENSTART_22_3" title="Referenced at line 21">WATERTOKENSTART</a> = [<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_] {<span class="keyword">recover</span>}
 
   <span class="layout">// Allow to skip over special characters that are neither part of identifiers nor whitespace characters</span>
-  <a href="#WATERTOKENSEPARATOR_365_384" id="WATERTOKENSEPARATOR_633_652" title="Referenced at line 18">WATERTOKENSEPARATOR</a> = ~[<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_\ \t<span class="cons_Decimal">\12</span>\r\n\*] {<span class="keyword">recover</span>}
+  <a href="#WATERTOKENSEPARATOR_18_11" id="WATERTOKENSEPARATOR_25_3" title="Referenced at line 18">WATERTOKENSEPARATOR</a> = ~[<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_\ \t<span class="cons_Decimal">\12</span>\r\n\*] {<span class="keyword">recover</span>}
 
 <span class="keyword">lexical restrictions</span>
-  <a href="#WATERTOKEN_188_198" id="WATERTOKEN_717_727" title="Defined at line 11, 21">WATERTOKEN</a> -/- [<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_]
+  <a href="#WATERTOKEN_11_3" id="WATERTOKEN_28_3" title="Defined at line 11, 21">WATERTOKEN</a> -/- [<span class="cons_Regular">A</span>-<span class="cons_Regular">Z</span><span class="cons_Regular">a</span>-<span class="cons_Regular">z</span><span class="cons_Regular">0</span>-<span class="cons_Regular">9</span>\_]
 </code></pre></td></tr></tbody></table></div>
+
+<div id="modal">
+  <div id="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-h2"></h2>
+    <p  id="modal-p"></p>
+    <ul id="modal-ul"></ul>
+  </div>
+</div>

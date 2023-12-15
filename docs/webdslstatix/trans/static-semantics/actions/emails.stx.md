@@ -22,16 +22,25 @@ hide:
 10
 11
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../../webdsl-actions.stx/#static-semantics/actions/emails_121_152" id="static-semantics/actions/emails_7_38" title="Referenced at ../../webdsl-actions.stx line 6"><span class="token sort_Id">static-semantics/actions/emails</span></a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../../webdsl-actions.stx/#static-semantics/actions/emails_6_3" id="static-semantics/actions/emails_1_8" title="Referenced at ../../webdsl-actions.stx line 6"><span class="token sort_Id">static-semantics/actions/emails</span></a>
 
 <span class="keyword">imports</span>
-  <a href="../../types/built-ins.stx/#static-semantics/types/built-ins_7_39" id="static-semantics/types/built-ins_50_82" title="Defined at ../../types/built-ins.stx line 1"><span class="token sort_Id">static-semantics/types/built-ins</span></a>
+  <a href="../../types/built-ins.stx/#static-semantics/types/built-ins_1_8" id="static-semantics/types/built-ins_4_3" title="Defined at ../../types/built-ins.stx line 1"><span class="token sort_Id">static-semantics/types/built-ins</span></a>
 
-  <a href="../../webdsl.stx/#static-semantics/webdsl_7_30" id="static-semantics/webdsl_86_109" title="Defined at ../../webdsl.stx line 1"><span class="token sort_Id">static-semantics/webdsl</span></a>
+  <a href="../../webdsl.stx/#static-semantics/webdsl_1_8" id="static-semantics/webdsl_6_3" title="Defined at ../../webdsl.stx line 1"><span class="token sort_Id">static-semantics/webdsl</span></a>
 
 <span class="keyword">rules</span>
 
-  <a href="../../webdsl.stx/#typeOfExp_16579_16588" id="typeOfExp_120_129" title="Defined at ../../webdsl.stx line 388"><span class="token sort_Id">typeOfExp</span></a><span class="operator">(</span><span class="cons_Var">s</span><span class="operator">,</span> <span class="cons_Op"><a href="../../../../src-gen/statix/signatures/WebDSL-Action-sig.stx/#SendEmailFunctionCall_6579_6600" id="SendEmailFunctionCall_133_154" title="Defined at ../../../../src-gen/statix/signatures/WebDSL-Action-sig.stx line 189"><span class="token sort_Id">SendEmailFunctionCall</span></a><span class="operator">(</span><span class="cons_Var"><span id="e_155_156" title="Not referenced locally, nor via imports"><span class="token sort_Id">e</span></span></span>)</span><span class="operator">)</span> <span class="operator">=</span> <a href="../../types/built-ins.stx/#bool_2637_2641" id="bool_161_165" title="Defined at ../../types/built-ins.stx line 72"><span class="token sort_Id">bool</span></a><span class="operator">(</span><span class="cons_Var"><span id="s_166_167" title="Not referenced locally, nor via imports"><span class="token sort_Id">s</span></span></span><span class="operator">)</span> <span class="operator">:-</span> <span class="layout">/* TO-DO: implement validation of email call */</span>
+  <a href="../../webdsl.stx/#typeOfExp_388_3" id="typeOfExp_10_3" title="Defined at ../../webdsl.stx line 388"><span class="token sort_Id">typeOfExp</span></a><span class="operator">(</span><span class="cons_Var"><span id="s_10_13" title="Not referenced"><span class="token sort_Id">s</span></span></span><span class="operator">,</span> <span class="cons_Op"><a href="../../../../src-gen/statix/signatures/WebDSL-Action-sig.stx/#SendEmailFunctionCall_189_5" id="SendEmailFunctionCall_10_16" title="Defined at ../../../../src-gen/statix/signatures/WebDSL-Action-sig.stx line 189"><span class="token sort_Id">SendEmailFunctionCall</span></a><span class="operator">(</span><span class="cons_Var"><span id="e_10_38" title="Not referenced"><span class="token sort_Id">e</span></span></span>)</span><span class="operator">)</span> <span class="operator">=</span> <a href="../../types/built-ins.stx/#bool_72_3" id="bool_10_44" title="Defined at ../../types/built-ins.stx line 72"><span class="token sort_Id">bool</span></a><span class="operator">(</span><span class="cons_Var">s</span><span class="operator">)</span> <span class="operator">:-</span> <span class="layout">/* TO-DO: implement validation of email call */</span>
     <span class="keyword">try</span> <span class="operator">{</span> <span class="keyword">false</span> <span class="operator">}</span> <span class="operator">|</span> <span class="token sort_Id">warning</span> <span class="operator">$[</span><span class="cons_Text">Static analysis of email call not yet implemented</span><span class="operator">]</span> <span class="operator">.</span>
 
 </code></pre></td></tr></tbody></table></div>
+
+<div id="modal">
+  <div id="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-h2"></h2>
+    <p  id="modal-p"></p>
+    <ul id="modal-ul"></ul>
+  </div>
+</div>

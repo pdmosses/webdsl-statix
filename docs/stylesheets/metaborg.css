@@ -2,23 +2,25 @@
   background-color: var(--md-default-bg-color);
 }
 
-.highlighttable code a {
+.highlighttable code a,
+.highlighttable code button {
   color: var(--md-code-fg-color);
 }
 
-.highlighttable code a:hover {
+.highlighttable code a:hover,
+.highlighttable code a:focus,
+.highlighttable code button:hover,
+.highlighttable code button:focus {
   text-decoration: underline;
-}
-
-[data-md-color-scheme="slate"] .highlighttable code {
-  filter: invert(100%) hue-rotate(180deg);
 }
 
 [data-md-color-scheme="slate"] .highlighttable code {
   color: hsla(200, 18%, 26%, 1);
   background-color: hsla(200, 0%, 96%, 1);
+  filter: invert(100%) hue-rotate(180deg);
 }
 
-[data-md-color-scheme="slate"] .highlighttable code a {
+[data-md-color-scheme="slate"] .highlighttable code a,
+[data-md-color-scheme="slate"] .highlighttable code button {
   color: hsla(200, 18%, 26%, 1);
 }
