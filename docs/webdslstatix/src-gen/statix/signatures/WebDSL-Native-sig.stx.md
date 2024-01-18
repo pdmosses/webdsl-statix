@@ -81,7 +81,7 @@ hide:
     <span class="cons_SortDecl"><a href="#NCFunctionReturn_26_30" id="NCFunctionReturn_15_5" title="Referenced at line 26, 41, 42, 43"><span class="token sort_Id">NCFunctionReturn</span></a></span>
     <span class="cons_SortDecl"><a href="#NCFunctionStatic_27_30" id="NCFunctionStatic_16_5" title="Referenced at line 27, 41, 44, 45"><span class="token sort_Id">NCFunctionStatic</span></a></span>
     <span class="cons_SortDecl"><button class="modal-open" id="NCFunctionFromStatic_17_5" title="Multi-file references" data-urls="#NCFunctionFromStatic_28_34 line 28, 46, 47; ../WebDSL-Type-sig.stx/#NCFunctionFromStatic_24_30 line 24"><span class="token sort_Id">NCFunctionFromStatic</span></button></span>
-    <span class="cons_SortAlias"><a href="#NativeFunId_41_37" id="NativeFunId_18_5" title="Referenced at line 41"><span class="token sort_Id">NativeFunId</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
+    <span class="cons_SortAlias"><a href="#NativeFunId_41_37" id="NativeFunId_18_5" title="Referenced at line 41"><span class="token sort_Id">NativeFunId</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
 
   <span class="keyword">constructors</span>
     <span class="cons_OpDecl"><span id="NCAlias-Plhdr_21_5" title="Not referenced"><span class="token sort_Id">NCAlias-Plhdr</span></span> <span class="operator">:</span> <span class="cons_SimpleSort"><a href="#NCAlias_10_5" id="NCAlias_21_21" title="Defined at line 10"><span class="token sort_Id">NCAlias</span></a></span></span>

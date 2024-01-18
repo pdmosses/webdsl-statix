@@ -59,15 +59,15 @@ hide:
 <span class="keyword">signature</span>
 
   <span class="keyword">sorts</span>
-    <span class="cons_SortAlias"><a href="#HTML5VoidElement_30_31" id="HTML5VoidElement_11_5" title="Referenced at line 30"><span class="token sort_Id">HTML5VoidElement</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><a href="#XMLComment_31_18" id="XMLComment_12_5" title="Referenced at line 31"><span class="token sort_Id">XMLComment</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="XMLCommentChar_13_5" title="Not referenced"><span class="token sort_Id">XMLCommentChar</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="OneDash_14_5" title="Not referenced"><span class="token sort_Id">OneDash</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="TwoDashes_15_5" title="Not referenced"><span class="token sort_Id">TwoDashes</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><a href="#QualName_34_17" id="QualName_16_5" title="Referenced at line 34"><span class="token sort_Id">QualName</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="Qualifier_17_5" title="Not referenced"><span class="token sort_Id">Qualifier</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="NCName_18_5" title="Not referenced"><span class="token sort_Id">NCName</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><a href="#XMLTagName_28_23" id="XMLTagName_19_5" title="Referenced at line 28, 29"><span class="token sort_Id">XMLTagName</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
+    <span class="cons_SortAlias"><a href="#HTML5VoidElement_30_31" id="HTML5VoidElement_11_5" title="Referenced at line 30"><span class="token sort_Id">HTML5VoidElement</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><a href="#XMLComment_31_18" id="XMLComment_12_5" title="Referenced at line 31"><span class="token sort_Id">XMLComment</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="XMLCommentChar_13_5" title="Not referenced"><span class="token sort_Id">XMLCommentChar</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="OneDash_14_5" title="Not referenced"><span class="token sort_Id">OneDash</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="TwoDashes_15_5" title="Not referenced"><span class="token sort_Id">TwoDashes</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><a href="#QualName_34_17" id="QualName_16_5" title="Referenced at line 34"><span class="token sort_Id">QualName</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="Qualifier_17_5" title="Not referenced"><span class="token sort_Id">Qualifier</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="NCName_18_5" title="Not referenced"><span class="token sort_Id">NCName</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><a href="#XMLTagName_28_23" id="XMLTagName_19_5" title="Referenced at line 28, 29"><span class="token sort_Id">XMLTagName</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
     <span class="cons_SortDecl"><button class="modal-open" id="CommonAttribute_20_5" title="Multi-file references" data-urls="#CommonAttribute_23_29 line 23, 35, 36, 37, 38; ../WebDSL-UI-sig.stx/#CommonAttribute_222_42 line 222; ../../../../trans/static-semantics/ui/attributes.stx/#CommonAttribute_46_31 line 46"><span class="token sort_Id">CommonAttribute</span></button></span>
 
   <span class="keyword">constructors</span>

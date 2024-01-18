@@ -50,10 +50,10 @@ hide:
 
   <span class="keyword">sorts</span>
     <span class="cons_SortDecl"><button class="modal-open" id="JSPart_12_5" title="Multi-file references" data-urls="#JSPart_19_20 line 19, 24, 25, 26, 27; ../../../../trans/static-semantics/webdsl-ui.stx/#JSPart_174_28 line 174"><span class="token sort_Id">JSPart</span></button></span>
-    <span class="cons_SortAlias"><span id="JSChar_13_5" title="Not referenced"><span class="token sort_Id">JSChar</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><a href="#JSString_27_16" id="JSString_14_5" title="Referenced at line 27"><span class="token sort_Id">JSString</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="JSSmallerThan_15_5" title="Not referenced"><span class="token sort_Id">JSSmallerThan</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="JSTilde_16_5" title="Not referenced"><span class="token sort_Id">JSTilde</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
+    <span class="cons_SortAlias"><span id="JSChar_13_5" title="Not referenced"><span class="token sort_Id">JSChar</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><a href="#JSString_27_16" id="JSString_14_5" title="Referenced at line 27"><span class="token sort_Id">JSString</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="JSSmallerThan_15_5" title="Not referenced"><span class="token sort_Id">JSSmallerThan</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="JSTilde_16_5" title="Not referenced"><span class="token sort_Id">JSTilde</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
 
   <span class="keyword">constructors</span>
     <span class="cons_OpDecl"><span id="JSPart-Plhdr_19_5" title="Not referenced"><span class="token sort_Id">JSPart-Plhdr</span></span> <span class="operator">:</span> <span class="cons_SimpleSort"><a href="#JSPart_12_5" id="JSPart_19_20" title="Defined at line 12"><span class="token sort_Id">JSPart</span></a></span></span>

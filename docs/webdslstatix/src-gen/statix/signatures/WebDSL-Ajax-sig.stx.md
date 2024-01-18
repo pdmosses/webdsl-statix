@@ -92,7 +92,7 @@ hide:
     <span class="cons_SortDecl"><a href="#PlaceholderVar_25_28" id="PlaceholderVar_15_5" title="Referenced at line 25, 57, 58"><span class="token sort_Id">PlaceholderVar</span></a></span>
     <span class="cons_SortDecl"><a href="#AjaxVisibility_26_28" id="AjaxVisibility_16_5" title="Referenced at line 26, 36, 37, 38, 39"><span class="token sort_Id">AjaxVisibility</span></a></span>
     <span class="cons_SortDecl"><a href="#AjaxReplaceTemplateCall_27_37" id="AjaxReplaceTemplateCall_17_5" title="Referenced at line 27, 34, 45, 46"><span class="token sort_Id">AjaxReplaceTemplateCall</span></a></span>
-    <span class="cons_SortAlias"><a href="#EmptyLex_46_24" id="EmptyLex_18_5" title="Referenced at line 46"><span class="token sort_Id">EmptyLex</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
+    <span class="cons_SortAlias"><a href="#EmptyLex_46_24" id="EmptyLex_18_5" title="Referenced at line 46"><span class="token sort_Id">EmptyLex</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
     <span class="cons_SortDecl"><button class="modal-open" id="PHExp_19_5" title="Multi-file references" data-urls="#PHExp_28_19 line 28, 54, 56, 59, 60, 61, 62, 63, 64; ../../../../trans/static-semantics/webdsl.stx/#PHExp_398_34 line 398"><span class="token sort_Id">PHExp</span></button></span>
 
   <span class="keyword">constructors</span>

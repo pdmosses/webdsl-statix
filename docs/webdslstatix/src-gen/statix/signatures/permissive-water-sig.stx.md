@@ -35,10 +35,10 @@ hide:
 <span class="keyword">signature</span>
 
   <span class="keyword">sorts</span>
-    <span class="cons_SortAlias"><span id="WATER_8_5" title="Not referenced"><span class="token sort_Id">WATER</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="WATERTOKEN_9_5" title="Not referenced"><span class="token sort_Id">WATERTOKEN</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="WATERTOKENSTART_10_5" title="Not referenced"><span class="token sort_Id">WATERTOKENSTART</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
-    <span class="cons_SortAlias"><span id="WATERTOKENSEPARATOR_11_5" title="Not referenced"><span class="token sort_Id">WATERTOKENSEPARATOR</span></span> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
+    <span class="cons_SortAlias"><span id="WATER_8_5" title="Not referenced"><span class="token sort_Id">WATER</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="WATERTOKEN_9_5" title="Not referenced"><span class="token sort_Id">WATERTOKEN</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="WATERTOKENSTART_10_5" title="Not referenced"><span class="token sort_Id">WATERTOKENSTART</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
+    <span class="cons_SortAlias"><span id="WATERTOKENSEPARATOR_11_5" title="Not referenced"><span class="token sort_Id">WATERTOKENSEPARATOR</span></span> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
 
   <span class="keyword">constructors</span>
 

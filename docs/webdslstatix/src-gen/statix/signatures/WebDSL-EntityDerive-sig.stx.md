@@ -48,7 +48,7 @@ hide:
 
   <span class="keyword">sorts</span>
     <span class="cons_SortDecl"><a href="#ExpEntityDeriveProp_16_33" id="ExpEntityDeriveProp_12_5" title="Referenced at line 16, 21, 22"><span class="token sort_Id">ExpEntityDeriveProp</span></a></span>
-    <span class="cons_SortAlias"><a href="#DeriveArgPropId_22_27" id="DeriveArgPropId_13_5" title="Referenced at line 22, 23"><span class="token sort_Id">DeriveArgPropId</span></a> <span class="operator">=</span> <span class="cons_StringSort">string</span></span>
+    <span class="cons_SortAlias"><a href="#DeriveArgPropId_22_27" id="DeriveArgPropId_13_5" title="Referenced at line 22, 23"><span class="token sort_Id">DeriveArgPropId</span></a> <span class="operator">=</span> <span class="cons_StringSort"><span class="keyword">string</span></span></span>
 
   <span class="keyword">constructors</span>
     <span class="cons_OpDecl"><span id="ExpEntityDeriveProp-Plhdr_16_5" title="Not referenced"><span class="token sort_Id">ExpEntityDeriveProp-Plhdr</span></span> <span class="operator">:</span> <span class="cons_SimpleSort"><a href="#ExpEntityDeriveProp_12_5" id="ExpEntityDeriveProp_16_33" title="Defined at line 12"><span class="token sort_Id">ExpEntityDeriveProp</span></a></span></span>
