@@ -26,20 +26,20 @@ hide:
 14
 15
 </pre></div></td>
-<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Test_24_3" id="WebDSL-Test_1_8" title="Referenced at ../webdsl-statix.sdf3 line 24">WebDSL-Test</a>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../webdsl-statix.sdf3/#WebDSL-Test_24_3" id="WebDSL-Test_1_8" title="a definition with a single reference">WebDSL-Test</a>
 
 <span class="keyword">imports</span>
-  <a href="../WebDSL-Action.sdf3/#WebDSL-Action_1_8" id="WebDSL-Action_4_3" title="Defined at ../WebDSL-Action.sdf3 line 1">WebDSL-Action</a>
-  <a href="../WebDSL-Lexical.sdf3/#WebDSL-Lexical_1_8" id="WebDSL-Lexical_5_3" title="Defined at ../WebDSL-Lexical.sdf3 line 1">WebDSL-Lexical</a>
-  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_1_8" id="WebDSL-Core_6_3" title="Defined at ../WebDSL-Core.sdf3 line 1">WebDSL-Core</a>
+  <a href="../WebDSL-Action.sdf3/#WebDSL-Action_1_8" id="WebDSL-Action_4_3" title="a reference to a single-file definition">WebDSL-Action</a>
+  <a href="../WebDSL-Lexical.sdf3/#WebDSL-Lexical_1_8" id="WebDSL-Lexical_5_3" title="a reference to a single-file definition">WebDSL-Lexical</a>
+  <a href="../WebDSL-Core.sdf3/#WebDSL-Core_1_8" id="WebDSL-Core_6_3" title="a reference to a single-file definition">WebDSL-Core</a>
 
 <span class="keyword">context-free syntax</span>
 
-  <span id="Definition_10_3" title="Not referenced">Definition</span>.<span class="cons_Constructor"><span id="Test_10_14" title="Not referenced">Test</span></span> = &lt;
-    <span class="cons_String">test</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_5_49" id="Id_11_11" title="Defined at ../WebDSL-Lexical.sdf3 line 5, 16">Id</a>&gt; &lt;<a href="../WebDSL-Action.sdf3/#Block_13_11" id="Block_11_16" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
+  <span id="Definition_10_3" title="a definition with no references">Definition</span>.<span class="cons_Constructor"><span id="Test_10_14" title="a definition with no references">Test</span></span> = &lt;
+    <span class="cons_String">test</span> &lt;<a href="../WebDSL-Lexical.sdf3/#Id_5_49" id="Id_11_11" title="a reference to a single-file definition">Id</a>&gt; &lt;<a href="../WebDSL-Action.sdf3/#Block_13_11" id="Block_11_16" title="a reference to a single-file definition">Block</a>&gt;
   &gt;
-  <span id="Definition_13_3" title="Not referenced">Definition</span>.<span class="cons_Constructor"><span id="UnnamedTest_13_14" title="Not referenced">UnnamedTest</span></span> = &lt;
-    <span class="cons_String">test</span> &lt;<a href="../WebDSL-Action.sdf3/#Block_13_11" id="Block_14_11" title="Defined at ../WebDSL-Action.sdf3 line 13, 45">Block</a>&gt;
+  <span id="Definition_13_3" title="a definition with no references">Definition</span>.<span class="cons_Constructor"><span id="UnnamedTest_13_14" title="a definition with no references">UnnamedTest</span></span> = &lt;
+    <span class="cons_String">test</span> &lt;<a href="../WebDSL-Action.sdf3/#Block_13_11" id="Block_14_11" title="a reference to a single-file definition">Block</a>&gt;
   &gt;
 
 </code></pre></td></tr></tbody></table></div>

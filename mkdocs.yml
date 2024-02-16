@@ -39,8 +39,8 @@ markdown_extensions:
   - def_list
   - footnotes
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
   - pymdownx.details
   - pymdownx.superfences
   - pymdownx.tasklist:
@@ -50,6 +50,7 @@ extra_css:
   - stylesheets/metaborg.css
   - stylesheets/modal.css
   - stylesheets/sdf3.css
+  - stylesheets/nab.css
   - stylesheets/stx.css
 
 extra_javascript:

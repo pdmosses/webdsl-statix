@@ -1,12 +1,46 @@
 // Modal to display links to occurrences of a name in multiple files
 
 // Comments and suggestions for improvment: p.d.mosses@tudelft.nl
-// Caveat: Novice JS author
+// Thanks to https://github.com/maxdekrieger for helpful contributions
 
-// TODO: Replace by a CSS-only modal (or add a no-js fallback)
+// TODO: Investigate a CSS-only modal (or add a no-js fallback)
+
+// Transform the data-urls attribute of a button to a list item
+
+// listItem("FILE#NAME line L1_C1, ..., Ln_Cn") =
+// <li> FILE line 
+//   <a href="FILE#NAME_L1_C1" class="modal-anchor">L1</a>
+//   ...
+//   <a href="FILE#NAME_Ln_Cn" class="modal-anchor">Ln</a>
+// </li>
+function listItem(string) {
+  const file = string.split("#")[0];
+  const name = string.split("#")[1].split(" ")[0];
+  const lcs = string.split(" line ")[1].split(", ");
+
+  const li = document.createElement("li");
+  li.insertAdjacentText("beforeend", file + " line");
+  for (const lc of lcs) {
+    li.insertAdjacentText("beforeend", " ");
+    const line = lc.split("_")[0];
+    const column = lc.split("_")[1];
+    const a = document.createElement("a");
+    const href = document.createAttribute("href");
+    href.value = file + "#" + name + "_" + line + "_" + column;
+    a.setAttributeNode(href);
+    const cl = document.createAttribute("class");
+    cl.value = "modal-anchor";
+    a.setAttributeNode(cl);
+    li.appendChild(a);
+    a.textContent = line;
+  }
+
+  return li;
+}
 
 // Get the modal elements
-const modal = document.getElementById("modal");
+// A redundant outermost <div id="modal"> is ignored
+const modal = document.getElementById("modal-content");
 const h2    = document.getElementById("modal-h2");
 const p     = document.getElementById("modal-p");
 const ul    = document.getElementById("modal-ul");
@@ -18,45 +52,10 @@ const btns =  document.getElementsByClassName("modal-open");
 
 // Opening the modal
 
-// Create a <li><a> element for "NAME-URL line N1, ..., Nm"
-// TODO: Make more concise
-function urlItem(string) {
-  const url = string.split(" line ")[0];
-  const lns = "Line " + string.split(" line ")[1];
-  
-  const href = document.createAttribute("href");
-  href.value = url;
-
-  const title = document.createAttribute("title");
-  title.value = lns;
-
-  const classAttr = document.createAttribute("class");
-  classAttr.value = "modal-anchor";
-
-  const a = document.createElement("a");
-  let text = url.split("#")[0];
-  if (text === "") {
-    text = "this file";
-  }
-  else {
-    text = text.slice(0, -1);
-  }
-  a.setAttributeNode(href);
-  a.setAttributeNode(title);
-  a.setAttributeNode(classAttr);
-  a.textContent = text;
-
-  const li = document.createElement("li");
-  li.appendChild(a);
-  return li;
-}
-
-// When the user clicks in any button, open the modal 
+// When the user clicks on any button, open the modal and set its elements
 function btnClick(event) {
-  let node = event.target;
-  while (node && node.tagName != "BUTTON") {
-    node = node.parentNode;
-  }
+  const node = event.target.closest("button.modal-open");
+
   // Copy the button contents to a code element in the modal heading
   h2.replaceChildren();
   if (node.hasChildNodes()) {
@@ -66,23 +65,26 @@ function btnClick(event) {
       code.appendChild(child);
     };
     h2.appendChild(code);
-    // h2.insertAdjacentText("beforeend", " links");
   }
+
   // Copy the title to the paragraph element
   p.textContent = `${node.title}:`;
-  // Copy the data-urls to anchor items
+
+  // Copy the data-urls to list items
   ul.replaceChildren();
   if (node) {
-    const urls = node.dataset.urls.split("; ");
-    for (const url of urls) {
-      ul.appendChild(urlItem(url));
+    const strings = node.dataset.urls.split("; ");
+    for (const string of strings) {
+      ul.appendChild(listItem(string));
     };
   }
-  // When the user clicks on any link, close the modal
+
+  // When the user clicks on any link in the modal, close the modal
   const anchors = document.getElementsByClassName("modal-anchor");
   for (const anchor of anchors) {
     anchor.addEventListener("click", closeModal);
   }
+
   // Make the modal contents visible
   modal.style.display = "block";
 }
@@ -109,8 +111,14 @@ if (close) {
 // When the user clicks anywhere outside the modal, close it
 
 function windowClick(event) {
-  if (event.target == modal) {
-    closeModal(event);
+  // Only close the modal when:
+  // - it is currently open and
+  // - the click is not aimed at a button that opens the modal and
+  // - the click is outside the modal
+  if (modal.style.display != "none"
+      && event.target.closest("button.modal-open") == null
+      && event.target.closest('#modal-content') == null) {
+        closeModal(event);
   }
 }
 
