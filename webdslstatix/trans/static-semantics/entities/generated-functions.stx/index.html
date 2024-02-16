@@ -1,0 +1,2271 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://pdmosses.github.io/webdsl-statix/webdslstatix/trans/static-semantics/entities/generated-functions.stx/">
+      
+      
+        <link rel="prev" href="../built-ins.stx/">
+      
+      
+        <link rel="next" href="../../types/built-ins.stx/">
+      
+      
+      <link rel="icon" href="../../../../../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.9">
+    
+    
+      
+        <title>generated-functions.stx - webdsl-statix</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../assets/stylesheets/main.f2e4d321.min.css">
+      
+        
+        <link rel="stylesheet" href="../../../../../assets/stylesheets/palette.06af60db.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Roboto";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/metaborg.css">
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/modal.css">
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/sdf3.css">
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/nab.css">
+    
+      <link rel="stylesheet" href="../../../../../stylesheets/stx.css">
+    
+    <script>__md_scope=new URL("../../../../..",location),__md_hash=e=>[...e].reduce((e,_)=>(e<<5)-e+_.charCodeAt(0),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#generated-functionsstx" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../../../../.." title="webdsl-statix" class="md-header__button md-logo" aria-label="webdsl-statix" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3V6m0 5h18v2H3v-2m0 5h18v2H3v-2Z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            webdsl-statix
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              generated-functions.stx
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 0-7 7c0 2.38 1.19 4.47 3 5.74V17a1 1 0 0 0 1 1h6a1 1 0 0 0 1-1v-2.26c1.81-1.27 3-3.36 3-5.74a7 7 0 0 0-7-7M9 21a1 1 0 0 0 1 1h4a1 1 0 0 0 1-1v-1H9v1Z"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2a7 7 0 0 1 7 7c0 2.38-1.19 4.47-3 5.74V17a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-2.26C6.19 13.47 5 11.38 5 9a7 7 0 0 1 7-7M9 21v-1h6v1a1 1 0 0 1-1 1h-4a1 1 0 0 1-1-1m3-17a5 5 0 0 0-5 5c0 2.05 1.23 3.81 3 4.58V16h4v-2.42c1.77-.77 3-2.53 3-4.58a5 5 0 0 0-5-5Z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var media,input,key,value,palette=__md_get("__palette");if(palette&&palette.color){"(prefers-color-scheme)"===palette.color.media&&(media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']"),palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent"));for([key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      <label class="md-header__button md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+      </label>
+      <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.516 6.516 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5Z"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12 19 6.41Z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/pdmosses/webdsl-statix/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pdmosses/webdsl-statix
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href="../../../../.." class="md-tabs__link">
+        
+  
+    
+  
+  Hyperlinked Twin
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../../../../" class="md-tabs__link">
+          
+  
+    
+  
+  webdslstatix
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../../../../.." title="webdsl-statix" class="md-nav__button md-logo" aria-label="webdsl-statix" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54Z"/></svg>
+
+    </a>
+    webdsl-statix
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/pdmosses/webdsl-statix/" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Free 6.5.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2023 Fonticons, Inc.--><path d="M439.55 236.05 244 40.45a28.87 28.87 0 0 0-40.81 0l-40.66 40.63 51.52 51.52c27.06-9.14 52.68 16.77 43.39 43.68l49.66 49.66c34.23-11.8 61.18 31 35.47 56.69-26.49 26.49-70.21-2.87-56-37.34L240.22 199v121.85c25.3 12.54 22.26 41.85 9.08 55a34.34 34.34 0 0 1-48.55 0c-17.57-17.6-11.07-46.91 11.25-56v-123c-20.8-8.51-24.6-30.74-18.64-45L142.57 101 8.45 235.14a28.86 28.86 0 0 0 0 40.81l195.61 195.6a28.86 28.86 0 0 0 40.8 0l194.69-194.69a28.86 28.86 0 0 0 0-40.81z"/></svg>
+  </div>
+  <div class="md-source__repository">
+    pdmosses/webdsl-statix
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../.." class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Hyperlinked Twin
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+          
+        
+      
+        
+      
+        
+      
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          
+          <div class="md-nav__link md-nav__container">
+            <a href="../../../../" class="md-nav__link ">
+              
+  
+  <span class="md-ellipsis">
+    webdslstatix
+  </span>
+  
+
+            </a>
+            
+              
+              <label class="md-nav__link " for="__nav_2" id="__nav_2_label" tabindex="">
+                <span class="md-nav__icon md-icon"></span>
+              </label>
+            
+          </div>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            webdslstatix
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    syntax
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            syntax
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/HQL.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    HQL.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-AccessControl.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-AccessControl.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Action.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Action.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Ajax.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Ajax.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Attributes.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Attributes.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Core.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Core.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-DataModel.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-DataModel.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-DataValidation.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-DataValidation.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Dispatch.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Dispatch.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-EntityDerive.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-EntityDerive.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Exception.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Exception.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Expand.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Expand.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Generated.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Generated.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-JavaScript.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-JavaScript.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Lexical.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Lexical.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Native.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Native.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Prefetch.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Prefetch.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Regex.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Regex.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Routing.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Routing.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Search.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Search.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Service.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Service.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Test.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Test.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-TimeInterval.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-TimeInterval.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-Type.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-Type.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-UI.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-UI.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/WebDSL-XML.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    WebDSL-XML.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../syntax/webdsl-statix.sdf3/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-statix.sdf3
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    trans
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            trans
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1" id="__nav_2_3_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    static-semantics
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="3" aria-labelledby="__nav_2_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            static-semantics
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1_1" id="__nav_2_3_1_1_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    actions
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1_1">
+            <span class="md-nav__icon md-icon"></span>
+            actions
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actions/binops.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    binops.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actions/built-ins.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    built-ins.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actions/emails.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    emails.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../actions/functions.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    functions.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1_2" id="__nav_2_3_1_2_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    entities
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3_1_2">
+            <span class="md-nav__icon md-icon"></span>
+            entities
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../annotations.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    annotations.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../built-ins.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    built-ins.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  <span class="md-ellipsis">
+    generated-functions.stx
+  </span>
+  
+
+      </a>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1_3" id="__nav_2_3_1_3_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    types
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1_3">
+            <span class="md-nav__icon md-icon"></span>
+            types
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/built-ins.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    built-ins.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../types/type-extensions.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    type-extensions.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+      
+        
+      
+        
+      
+        
+      
+        
+      
+        
+      
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3_1_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_3_1_4" id="__nav_2_3_1_4_label" tabindex="0">
+            
+  
+  <span class="md-ellipsis">
+    ui
+  </span>
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="4" aria-labelledby="__nav_2_3_1_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_3_1_4">
+            <span class="md-nav__icon md-icon"></span>
+            ui
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/actions.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    actions.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/ajax.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    ajax.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/attributes.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    attributes.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/built-ins.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    built-ins.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../ui/template-calls.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    template-calls.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-ac.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-ac.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-actions.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-actions.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-built-ins.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-built-ins.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-entities.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-entities.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-expand.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-expand.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-hql.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-hql.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-modules.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-modules.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-native.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-native.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-regex.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-regex.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-search.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-search.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-services.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-services.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-types.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-types.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl-ui.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl-ui.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../webdsl.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    webdsl.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../statics.stx/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    statics.stx
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+                
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" hidden>
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+  
+  
+
+
+<h1 id="generated-functionsstx"><code>generated-functions.stx</code></h1>
+<p><span class="twemoji"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 .297c-6.63 0-12 5.373-12 12 0 5.303 3.438 9.8 8.205 11.385.6.113.82-.258.82-.577 0-.285-.01-1.04-.015-2.04-3.338.724-4.042-1.61-4.042-1.61C4.422 18.07 3.633 17.7 3.633 17.7c-1.087-.744.084-.729.084-.729 1.205.084 1.838 1.236 1.838 1.236 1.07 1.835 2.809 1.305 3.495.998.108-.776.417-1.305.76-1.605-2.665-.3-5.466-1.332-5.466-5.93 0-1.31.465-2.38 1.235-3.22-.135-.303-.54-1.523.105-3.176 0 0 1.005-.322 3.3 1.23.96-.267 1.98-.399 3-.405 1.02.006 2.04.138 3 .405 2.28-1.552 3.285-1.23 3.285-1.23.645 1.653.24 2.873.12 3.176.765.84 1.23 1.91 1.23 3.22 0 4.61-2.805 5.625-5.475 5.92.42.36.81 1.096.81 2.22 0 1.606-.015 2.896-.015 3.286 0 .315.21.69.825.57C20.565 22.092 24 17.592 24 12.297c0-6.627-5.373-12-12-12"/></svg></span> <a href="https://github.com/pdmosses/webdsl-statix/blob/master/webdslstatix/trans/static-semantics/entities/generated-functions.stx" title="The source file on GitHub">pdmosses/webdsl-statix/webdslstatix/trans/static-semantics/entities/generated-functions.stx</a></p>
+<div class="stx"><table class="highlighttable"><tbody><tr><td class="linenos"><div class="linenodiv"><pre><span></span>1
+2
+3
+4
+5
+6
+7
+8
+9
+10
+11
+12
+13
+14
+15
+16
+17
+18
+19
+20
+21
+22
+23
+24
+25
+26
+27
+28
+29
+30
+31
+32
+33
+34
+35
+36
+37
+38
+39
+40
+41
+42
+43
+44
+45
+46
+47
+48
+49
+50
+51
+52
+53
+54
+</pre></div></td>
+<td class="code"><pre><code><span class="keyword">module</span> <a href="../../webdsl-entities.stx/#static-semantics/entities/generated-functions_8_3" id="static-semantics/entities/generated-functions_1_8" title="a definition with a single reference"><span class="token sort_Id">static-semantics/entities/generated-functions</span></a>
+
+<span class="keyword">imports</span>
+  <a href="../annotations.stx/#static-semantics/entities/annotations_1_8" id="static-semantics/entities/annotations_4_3" title="a reference to a single-file definition"><span class="token sort_Id">static-semantics/entities/annotations</span></a>
+
+  <a href="../../types/built-ins.stx/#static-semantics/types/built-ins_1_8" id="static-semantics/types/built-ins_6_3" title="a reference to a single-file definition"><span class="token sort_Id">static-semantics/types/built-ins</span></a>
+
+  <a href="../../webdsl.stx/#static-semantics/webdsl_1_8" id="static-semantics/webdsl_8_3" title="a reference to a single-file definition"><span class="token sort_Id">static-semantics/webdsl</span></a>
+  <a href="../../webdsl-actions.stx/#static-semantics/webdsl-actions_1_8" id="static-semantics/webdsl-actions_9_3" title="a reference to a single-file definition"><span class="token sort_Id">static-semantics/webdsl-actions</span></a>
+  <a href="../../webdsl-types.stx/#static-semantics/webdsl-types_1_8" id="static-semantics/webdsl-types_10_3" title="a reference to a single-file definition"><span class="token sort_Id">static-semantics/webdsl-types</span></a>
+
+<span class="keyword">rules</span>
+
+<span class="layout">/*
+                       declare findEntity(&lt;idType&gt;) or loadEntity(&lt;uuid&gt;) based
+                       on presence of `(id)` annotation and type
+                     */</span>
+
+  <a href="../../webdsl.stx/#defOk_356_3" id="defOk_19_3" title="a reference to a single-file definition"><span class="token sort_Id">defOk</span></a><span class="operator">(</span><span class="cons_Var"><button class="modal-open" id="s_19_9" title="a definition with multiple references" data-urls="#s line 20_17, 21_29"><span class="token sort_Id">s</span></button></span><span class="operator">,</span> <span class="cons_Op"><a href="../../../../src-gen/statix/signatures/WebDSL-Generated-sig.stx/#GeneratedDefinition_19_5" id="GeneratedDefinition_19_12" title="a reference to a single-file definition"><span class="token sort_Id">GeneratedDefinition</span></a><span class="operator">(</span><span class="cons_Op"><a href="../../../../src-gen/statix/signatures/WebDSL-Generated-sig.stx/#Generated_18_5" id="Generated_19_32" title="a reference to a single-file definition"><span class="token sort_Id">Generated</span></a><span class="operator">([</span><span class="cons_Str"><span class="operator">"</span>loadOrFindEntity<span class="operator">"</span></span><span class="operator">,</span> <span class="cons_Var"><a href="#entityName_20_20" id="entityName_19_63" title="a definition with a single reference"><span class="token sort_Id">entityName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#loadName_21_32" id="loadName_19_75" title="a definition with a single reference"><span class="token sort_Id">loadName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findName_21_42" id="findName_19_85" title="a definition with a single reference"><span class="token sort_Id">findName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#getUniqueName_21_52" id="getUniqueName_19_95" title="a definition with a single reference"><span class="token sort_Id">getUniqueName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueName_21_67" id="isUniqueName_19_110" title="a definition with a single reference"><span class="token sort_Id">isUniqueName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueIdName_21_81" id="isUniqueIdName_19_124" title="a definition with a single reference"><span class="token sort_Id">isUniqueIdName</span></a></span><span class="operator">])</span></span><span class="operator">)</span></span><span class="operator">)</span> <span class="operator">:-</span> <span class="operator">{</span> <span class="cons_Var"><button class="modal-open" id="s_ent_19_148" title="a definition with multiple references" data-urls="#s_ent line 20_56, 21_117"><span class="token sort_Id">s_ent</span></button></span> <span class="cons_Var"><button class="modal-open" id="t_19_154" title="a definition with multiple references" data-urls="#t line 20_44, 21_97"><span class="token sort_Id">t</span></button></span> <span class="operator">}</span>
+    <a href="../../webdsl.stx/#resolveType_105_3" id="resolveType_20_5" title="a reference to a single-file definition"><span class="token sort_Id">resolveType</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_19_9" id="s_20_17" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#entityName_19_63" id="entityName_20_20" title="a reference to a single-file definition"><span class="token sort_Id">entityName</span></a></span><span class="operator">)</span> <span class="operator">==</span> <span class="operator">[(_,</span> <span class="operator">(_,</span> <span class="cons_Var"><a href="#t_19_154" id="t_20_44" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">@</span><span class="cons_Op"><a href="../../webdsl-types.stx/#ENTITY_20_5" id="ENTITY_20_46" title="a reference to a single-file definition"><span class="token sort_Id">ENTITY</span></a><span class="operator">(_,</span> <span class="cons_Var"><a href="#s_ent_19_148" id="s_ent_20_56" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">)</span></span><span class="operator">))],</span>
+    <a href="#declareLoadOrFindEntity_23_3" id="declareLoadOrFindEntity_21_5" title="a reference to a single-file definition"><span class="token sort_Id">declareLoadOrFindEntity</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_19_9" id="s_21_29" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#loadName_19_75" id="loadName_21_32" title="a reference to a single-file definition"><span class="token sort_Id">loadName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findName_19_85" id="findName_21_42" title="a reference to a single-file definition"><span class="token sort_Id">findName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#getUniqueName_19_95" id="getUniqueName_21_52" title="a reference to a single-file definition"><span class="token sort_Id">getUniqueName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueName_19_110" id="isUniqueName_21_67" title="a reference to a single-file definition"><span class="token sort_Id">isUniqueName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueIdName_19_124" id="isUniqueIdName_21_81" title="a reference to a single-file definition"><span class="token sort_Id">isUniqueIdName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#t_19_154" id="t_21_97" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">,</span> <a href="../annotations.stx/#hasIdAnnotationB_220_3" id="hasIdAnnotationB_21_100" title="a reference to a single-file definition"><span class="token sort_Id">hasIdAnnotationB</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_ent_19_148" id="s_ent_21_117" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">)).</span>
+
+  <button class="modal-open" id="declareLoadOrFindEntity_23_3" title="a definition with multiple references" data-urls="#declareLoadOrFindEntity line 21_5, 24_3, 27_3"><span class="token sort_Id">declareLoadOrFindEntity</span></button> <span class="operator">:</span> <span class="cons_ScopeSort"><span class="keyword">scope</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_SimpleSort"><a href="../../webdsl.stx/#TYPE_29_5" id="TYPE_23_82" title="a reference to a single-file definition"><span class="token sort_Id">TYPE</span></a></span> <span class="operator">*</span> <span class="cons_SimpleSort"><a href="../../webdsl.stx/#BOOL_30_5" id="BOOL_23_89" title="a reference to a single-file definition"><span class="token sort_Id">BOOL</span></a></span>
+  <a href="#declareLoadOrFindEntity_23_3" id="declareLoadOrFindEntity_24_3" title="a reference to a single-file definition"><span class="token sort_Id">declareLoadOrFindEntity</span></a><span class="operator">(</span><span class="cons_Var"><button class="modal-open" id="s_24_27" title="a definition with multiple references" data-urls="#s line 25_21, 25_61"><span class="token sort_Id">s</span></button></span><span class="operator">,</span> <span class="cons_Var"><a href="#loadName_25_24" id="loadName_24_30" title="a definition with a single reference"><span class="token sort_Id">loadName</span></a></span><span class="operator">,</span> <span class="operator">_,</span> <span class="operator">_,</span> <span class="operator">_,</span> <span class="operator">_,</span> <span class="cons_Var"><a href="#t_25_66" id="t_24_52" title="a definition with a single reference"><span class="token sort_Id">t</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#FALSE_35_5" id="FALSE_24_55" title="a reference to a single-file definition"><span class="token sort_Id">FALSE</span></a><span class="operator">()</span></span><span class="operator">)</span> <span class="operator">:-</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_25_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_24_27" id="s_25_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#loadName_24_30" id="loadName_25_24" title="a reference to a single-file definition"><span class="token sort_Id">loadName</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#GENERATED_ORIGIN_41_5" id="GENERATED_ORIGIN_25_34" title="a reference to a single-file definition"><span class="token sort_Id">GENERATED_ORIGIN</span></a><span class="operator">(</span>1<span class="operator">)</span></span><span class="operator">,</span> <span class="operator">[</span><a href="../../types/built-ins.stx/#uuid_74_3" id="uuid_25_56" title="a reference to a single-file definition"><span class="token sort_Id">uuid</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_24_27" id="s_25_61" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">)],</span> <span class="cons_Var"><a href="#t_24_52" id="t_25_66" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">).</span>
+
+  <a href="#declareLoadOrFindEntity_23_3" id="declareLoadOrFindEntity_27_3" title="a reference to a single-file definition"><span class="token sort_Id">declareLoadOrFindEntity</span></a><span class="operator">(</span><span class="cons_Var"><button class="modal-open" id="s_27_27" title="a definition with multiple references" data-urls="#s line 28_18, 32_21, 33_21, 34_21, 35_21, 36_21"><span class="token sort_Id">s</span></button></span><span class="operator">,</span> <span class="operator">_,</span> <span class="cons_Var"><a href="#findName_32_24" id="findName_27_33" title="a definition with a single reference"><span class="token sort_Id">findName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#getUniqueName_33_24" id="getUniqueName_27_43" title="a definition with a single reference"><span class="token sort_Id">getUniqueName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueName_34_24" id="isUniqueName_27_58" title="a definition with a single reference"><span class="token sort_Id">isUniqueName</span></a></span><span class="operator">,</span> <span class="cons_Var"><button class="modal-open" id="isUniqueIdName_27_72" title="a definition with multiple references" data-urls="#isUniqueIdName line 35_24, 36_24"><span class="token sort_Id">isUniqueIdName</span></button></span><span class="operator">,</span> <span class="cons_Var"><button class="modal-open" id="t_27_88" title="a definition with multiple references" data-urls="#t line 29_5, 32_71, 33_71, 34_62, 36_70"><span class="token sort_Id">t</span></button></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#TRUE_34_5" id="TRUE_27_91" title="a reference to a single-file definition"><span class="token sort_Id">TRUE</span></a><span class="operator">()</span></span><span class="operator">)</span> <span class="operator">:-</span> <span class="operator">{</span> <span class="cons_Var"><button class="modal-open" id="s_ent_27_104" title="a definition with multiple references" data-urls="#s_ent line 29_20, 30_29, 31_28"><span class="token sort_Id">s_ent</span></button></span> <span class="cons_Var"><button class="modal-open" id="idName_27_110" title="a definition with multiple references" data-urls="#idName line 30_51, 31_35"><span class="token sort_Id">idName</span></button></span> <span class="cons_Var"><button class="modal-open" id="idType_27_117" title="a definition with multiple references" data-urls="#idType line 31_5, 32_62, 33_62, 35_62, 36_62"><span class="token sort_Id">idType</span></button></span> <span class="cons_Var"><button class="modal-open" id="bool_27_124" title="a definition with multiple references" data-urls="#bool line 28_5, 34_66, 35_71, 36_74"><span class="token sort_Id">bool</span></button></span> <span class="operator">}</span>
+    <span class="cons_Var"><a href="#bool_27_124" id="bool_28_5" title="a reference to a single-file definition"><span class="token sort_Id">bool</span></a></span> <span class="operator">==</span> <a href="../../types/built-ins.stx/#bool_72_3" id="bool_28_13" title="a reference to a single-file definition"><span class="token sort_Id">bool</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_27_27" id="s_28_18" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">),</span>
+    <span class="cons_Var"><a href="#t_27_88" id="t_29_5" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span> <span class="operator">==</span> <span class="cons_Op"><a href="../../webdsl-types.stx/#ENTITY_20_5" id="ENTITY_29_10" title="a reference to a single-file definition"><span class="token sort_Id">ENTITY</span></a><span class="operator">(_,</span> <span class="cons_Var"><a href="#s_ent_27_104" id="s_ent_29_20" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">)</span></span><span class="operator">,</span>
+    <a href="../annotations.stx/#resolveAnnotationByAnno_47_3" id="resolveAnnotationByAnno_30_5" title="a reference to a single-file definition"><span class="token sort_Id">resolveAnnotationByAnno</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_ent_27_104" id="s_ent_30_29" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../annotations.stx/#ID_18_5" id="ID_30_36" title="a reference to a single-file definition"><span class="token sort_Id">ID</span></a><span class="operator">()</span></span><span class="operator">)</span> <span class="operator">==</span> <span class="operator">[(_,</span> <span class="operator">(</span><span class="cons_Var"><a href="#idName_27_110" id="idName_30_51" title="a reference to a single-file definition"><span class="token sort_Id">idName</span></a></span><span class="operator">,</span> <span class="operator">_))],</span>
+    <span class="cons_Var"><a href="#idType_27_117" id="idType_31_5" title="a reference to a single-file definition"><span class="token sort_Id">idType</span></a></span> <span class="operator">==</span> <a href="../../webdsl-types.stx/#propertyType_244_3" id="propertyType_31_15" title="a reference to a single-file definition"><span class="token sort_Id">propertyType</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_ent_27_104" id="s_ent_31_28" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#idName_27_110" id="idName_31_35" title="a reference to a single-file definition"><span class="token sort_Id">idName</span></a></span><span class="operator">),</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_32_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_27_27" id="s_32_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findName_27_33" id="findName_32_24" title="a reference to a single-file definition"><span class="token sort_Id">findName</span></a></span><span class="operator">,</span>       <span class="cons_Op"><a href="../../webdsl.stx/#GENERATED_ORIGIN_41_5" id="GENERATED_ORIGIN_32_40" title="a reference to a single-file definition"><span class="token sort_Id">GENERATED_ORIGIN</span></a><span class="operator">(</span>1<span class="operator">)</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#idType_27_117" id="idType_32_62" title="a reference to a single-file definition"><span class="token sort_Id">idType</span></a></span><span class="operator">],</span> <span class="cons_Var"><a href="#t_27_88" id="t_32_71" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">),</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_33_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_27_27" id="s_33_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#getUniqueName_27_43" id="getUniqueName_33_24" title="a reference to a single-file definition"><span class="token sort_Id">getUniqueName</span></a></span><span class="operator">,</span>  <span class="cons_Op"><a href="../../webdsl.stx/#GENERATED_ORIGIN_41_5" id="GENERATED_ORIGIN_33_40" title="a reference to a single-file definition"><span class="token sort_Id">GENERATED_ORIGIN</span></a><span class="operator">(</span>1<span class="operator">)</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#idType_27_117" id="idType_33_62" title="a reference to a single-file definition"><span class="token sort_Id">idType</span></a></span><span class="operator">],</span> <span class="cons_Var"><a href="#t_27_88" id="t_33_71" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">),</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_34_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_27_27" id="s_34_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueName_27_58" id="isUniqueName_34_24" title="a reference to a single-file definition"><span class="token sort_Id">isUniqueName</span></a></span><span class="operator">,</span>   <span class="cons_Op"><a href="../../webdsl.stx/#GENERATED_ORIGIN_41_5" id="GENERATED_ORIGIN_34_40" title="a reference to a single-file definition"><span class="token sort_Id">GENERATED_ORIGIN</span></a><span class="operator">(</span>1<span class="operator">)</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#t_27_88" id="t_34_62" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">],</span> <span class="cons_Var"><a href="#bool_27_124" id="bool_34_66" title="a reference to a single-file definition"><span class="token sort_Id">bool</span></a></span><span class="operator">),</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_35_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_27_27" id="s_35_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueIdName_27_72" id="isUniqueIdName_35_24" title="a reference to a single-file definition"><span class="token sort_Id">isUniqueIdName</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#GENERATED_ORIGIN_41_5" id="GENERATED_ORIGIN_35_40" title="a reference to a single-file definition"><span class="token sort_Id">GENERATED_ORIGIN</span></a><span class="operator">(</span>1<span class="operator">)</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#idType_27_117" id="idType_35_62" title="a reference to a single-file definition"><span class="token sort_Id">idType</span></a></span><span class="operator">],</span> <span class="cons_Var"><a href="#bool_27_124" id="bool_35_71" title="a reference to a single-file definition"><span class="token sort_Id">bool</span></a></span><span class="operator">),</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_36_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_27_27" id="s_36_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#isUniqueIdName_27_72" id="isUniqueIdName_36_24" title="a reference to a single-file definition"><span class="token sort_Id">isUniqueIdName</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#GENERATED_ORIGIN_41_5" id="GENERATED_ORIGIN_36_40" title="a reference to a single-file definition"><span class="token sort_Id">GENERATED_ORIGIN</span></a><span class="operator">(</span>2<span class="operator">)</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#idType_27_117" id="idType_36_62" title="a reference to a single-file definition"><span class="token sort_Id">idType</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#t_27_88" id="t_36_70" title="a reference to a single-file definition"><span class="token sort_Id">t</span></a></span><span class="operator">],</span> <span class="cons_Var"><a href="#bool_27_124" id="bool_36_74" title="a reference to a single-file definition"><span class="token sort_Id">bool</span></a></span><span class="operator">).</span>
+
+<span class="keyword">rules</span>
+
+<span class="layout">/*
+                       declare findEntityByProperty and findEntityByPropertyLike if
+                       the property is string-type compatible
+                     */</span>
+
+  <a href="../../webdsl.stx/#defOk_356_3" id="defOk_45_3" title="a reference to a single-file definition"><span class="token sort_Id">defOk</span></a><span class="operator">(</span><span class="cons_Var"><button class="modal-open" id="s_45_9" title="a definition with multiple references" data-urls="#s line 46_17, 48_33, 48_124"><span class="token sort_Id">s</span></button></span><span class="operator">,</span> <span class="cons_Op"><a href="../../../../src-gen/statix/signatures/WebDSL-Generated-sig.stx/#GeneratedDefinition_19_5" id="GeneratedDefinition_45_12" title="a reference to a single-file definition"><span class="token sort_Id">GeneratedDefinition</span></a><span class="operator">(</span><span class="cons_Op"><a href="../../../../src-gen/statix/signatures/WebDSL-Generated-sig.stx/#Generated_18_5" id="Generated_45_32" title="a reference to a single-file definition"><span class="token sort_Id">Generated</span></a><span class="operator">([</span><span class="cons_Str"><span class="operator">"</span>findEntityByProperty<span class="operator">"</span></span><span class="operator">,</span> <span class="cons_Var"><a href="#entityName_46_20" id="entityName_45_67" title="a definition with a single reference"><span class="token sort_Id">entityName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#propertyName_47_37" id="propertyName_45_79" title="a definition with a single reference"><span class="token sort_Id">propertyName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropName_48_36" id="findByPropName_45_93" title="a definition with a single reference"><span class="token sort_Id">findByPropName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropLikeName_48_52" id="findByPropLikeName_45_109" title="a definition with a single reference"><span class="token sort_Id">findByPropLikeName</span></a></span><span class="operator">])</span></span><span class="operator">)</span></span><span class="operator">)</span> <span class="operator">:-</span> <span class="operator">{</span> <span class="cons_Var"><button class="modal-open" id="entType_45_137" title="a definition with multiple references" data-urls="#entType line 46_44, 48_72"><span class="token sort_Id">entType</span></button></span> <span class="cons_Var"><button class="modal-open" id="s_ent_45_145" title="a definition with multiple references" data-urls="#s_ent line 46_62, 47_30"><span class="token sort_Id">s_ent</span></button></span> <span class="cons_Var"><button class="modal-open" id="propType_45_151" title="a definition with multiple references" data-urls="#propType line 47_5, 48_81, 48_107"><span class="token sort_Id">propType</span></button></span> <span class="operator">}</span>
+    <a href="../../webdsl.stx/#resolveType_105_3" id="resolveType_46_5" title="a reference to a single-file definition"><span class="token sort_Id">resolveType</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_45_9" id="s_46_17" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#entityName_45_67" id="entityName_46_20" title="a reference to a single-file definition"><span class="token sort_Id">entityName</span></a></span><span class="operator">)</span> <span class="operator">==</span> <span class="operator">[(_,</span> <span class="operator">(_,</span> <span class="cons_Var"><a href="#entType_45_137" id="entType_46_44" title="a reference to a single-file definition"><span class="token sort_Id">entType</span></a></span><span class="operator">@</span><span class="cons_Op"><a href="../../webdsl-types.stx/#ENTITY_20_5" id="ENTITY_46_52" title="a reference to a single-file definition"><span class="token sort_Id">ENTITY</span></a><span class="operator">(_,</span> <span class="cons_Var"><a href="#s_ent_45_145" id="s_ent_46_62" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">)</span></span><span class="operator">))],</span>
+    <span class="cons_Var"><a href="#propType_45_151" id="propType_47_5" title="a reference to a single-file definition"><span class="token sort_Id">propType</span></a></span> <span class="operator">==</span> <a href="../../webdsl-types.stx/#propertyType_244_3" id="propertyType_47_17" title="a reference to a single-file definition"><span class="token sort_Id">propertyType</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_ent_45_145" id="s_ent_47_30" title="a reference to a single-file definition"><span class="token sort_Id">s_ent</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#propertyName_45_79" id="propertyName_47_37" title="a reference to a single-file definition"><span class="token sort_Id">propertyName</span></a></span><span class="operator">),</span>
+    <a href="#declareFindEntityByProperty_50_3" id="declareFindEntityByProperty_48_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFindEntityByProperty</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_45_9" id="s_48_33" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropName_45_93" id="findByPropName_48_36" title="a reference to a single-file definition"><span class="token sort_Id">findByPropName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropLikeName_45_109" id="findByPropLikeName_48_52" title="a reference to a single-file definition"><span class="token sort_Id">findByPropLikeName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#entType_45_137" id="entType_48_72" title="a reference to a single-file definition"><span class="token sort_Id">entType</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#propType_45_151" id="propType_48_81" title="a reference to a single-file definition"><span class="token sort_Id">propType</span></a></span><span class="operator">,</span> <a href="../../webdsl.stx/#typeCompatibleB_411_3" id="typeCompatibleB_48_91" title="a reference to a single-file definition"><span class="token sort_Id">typeCompatibleB</span></a><span class="operator">(</span><span class="cons_Var"><a href="#propType_45_151" id="propType_48_107" title="a reference to a single-file definition"><span class="token sort_Id">propType</span></a></span><span class="operator">,</span> <a href="../../types/built-ins.stx/#string_48_3" id="string_48_117" title="a reference to a single-file definition"><span class="keyword">string</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_45_9" id="s_48_124" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">))).</span>
+
+  <button class="modal-open" id="declareFindEntityByProperty_50_3" title="a definition with multiple references" data-urls="#declareFindEntityByProperty line 48_5, 51_3, 52_3"><span class="token sort_Id">declareFindEntityByProperty</span></button> <span class="operator">:</span> <span class="cons_ScopeSort"><span class="keyword">scope</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_StringSort"><span class="keyword">string</span></span> <span class="operator">*</span> <span class="cons_SimpleSort"><a href="../../webdsl.stx/#TYPE_29_5" id="TYPE_50_59" title="a reference to a single-file definition"><span class="token sort_Id">TYPE</span></a></span> <span class="operator">*</span> <span class="cons_SimpleSort"><a href="../../webdsl.stx/#TYPE_29_5" id="TYPE_50_66" title="a reference to a single-file definition"><span class="token sort_Id">TYPE</span></a></span> <span class="operator">*</span> <span class="cons_SimpleSort"><a href="../../webdsl.stx/#BOOL_30_5" id="BOOL_50_73" title="a reference to a single-file definition"><span class="token sort_Id">BOOL</span></a></span>
+  <a href="#declareFindEntityByProperty_50_3" id="declareFindEntityByProperty_51_3" title="a reference to a single-file definition"><span class="token sort_Id">declareFindEntityByProperty</span></a><span class="operator">(_,</span> <span class="operator">_,</span> <span class="operator">_,</span> <span class="operator">_,</span> <span class="operator">_,</span> <span class="cons_Op"><a href="../../webdsl.stx/#FALSE_35_5" id="FALSE_51_46" title="a reference to a single-file definition"><span class="token sort_Id">FALSE</span></a><span class="operator">()</span></span><span class="operator">).</span>
+  <a href="#declareFindEntityByProperty_50_3" id="declareFindEntityByProperty_52_3" title="a reference to a single-file definition"><span class="token sort_Id">declareFindEntityByProperty</span></a><span class="operator">(</span><span class="cons_Var"><button class="modal-open" id="s_52_31" title="a definition with multiple references" data-urls="#s line 53_21, 54_21"><span class="token sort_Id">s</span></button></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropName_53_24" id="findByPropName_52_34" title="a definition with a single reference"><span class="token sort_Id">findByPropName</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropLikeName_54_24" id="findByPropLikeName_52_50" title="a definition with a single reference"><span class="token sort_Id">findByPropLikeName</span></a></span><span class="operator">,</span> <span class="cons_Var"><button class="modal-open" id="entType_52_70" title="a definition with multiple references" data-urls="#entType line 53_72, 54_76"><span class="token sort_Id">entType</span></button></span><span class="operator">,</span> <span class="cons_Var"><button class="modal-open" id="propType_52_79" title="a definition with multiple references" data-urls="#propType line 53_56, 54_60"><span class="token sort_Id">propType</span></button></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#TRUE_34_5" id="TRUE_52_89" title="a reference to a single-file definition"><span class="token sort_Id">TRUE</span></a><span class="operator">()</span></span><span class="operator">)</span> <span class="operator">:-</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_53_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_52_31" id="s_53_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropName_52_34" id="findByPropName_53_24" title="a reference to a single-file definition"><span class="token sort_Id">findByPropName</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#PROP_ORIGIN_40_5" id="PROP_ORIGIN_53_40" title="a reference to a single-file definition"><span class="token sort_Id">PROP_ORIGIN</span></a><span class="operator">()</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#propType_52_79" id="propType_53_56" title="a reference to a single-file definition"><span class="token sort_Id">propType</span></a></span><span class="operator">],</span> <span class="cons_Op"><a href="../../webdsl-types.stx/#LIST_35_5" id="LIST_53_67" title="a reference to a single-file definition"><span class="token sort_Id">LIST</span></a><span class="operator">(</span><span class="cons_Var"><a href="#entType_52_70" id="entType_53_72" title="a reference to a single-file definition"><span class="token sort_Id">entType</span></a></span><span class="operator">)</span></span><span class="operator">),</span>
+    <a href="../../webdsl.stx/#declareFunction_217_3" id="declareFunction_54_5" title="a reference to a single-file definition"><span class="token sort_Id">declareFunction</span></a><span class="operator">(</span><span class="cons_Var"><a href="#s_52_31" id="s_54_21" title="a reference to a single-file definition"><span class="token sort_Id">s</span></a></span><span class="operator">,</span> <span class="cons_Var"><a href="#findByPropLikeName_52_50" id="findByPropLikeName_54_24" title="a reference to a single-file definition"><span class="token sort_Id">findByPropLikeName</span></a></span><span class="operator">,</span> <span class="cons_Op"><a href="../../webdsl.stx/#PROP_ORIGIN_40_5" id="PROP_ORIGIN_54_44" title="a reference to a single-file definition"><span class="token sort_Id">PROP_ORIGIN</span></a><span class="operator">()</span></span><span class="operator">,</span> <span class="operator">[</span><span class="cons_Var"><a href="#propType_52_79" id="propType_54_60" title="a reference to a single-file definition"><span class="token sort_Id">propType</span></a></span><span class="operator">],</span> <span class="cons_Op"><a href="../../webdsl-types.stx/#LIST_35_5" id="LIST_54_71" title="a reference to a single-file definition"><span class="token sort_Id">LIST</span></a><span class="operator">(</span><span class="cons_Var"><a href="#entType_52_70" id="entType_54_76" title="a reference to a single-file definition"><span class="token sort_Id">entType</span></a></span><span class="operator">)</span></span><span class="operator">).</span>
+
+</code></pre></td></tr></tbody></table></div>
+
+<div id="modal">
+  <div id="modal-content">
+    <span id="modal-close">&times;</span>
+    <h2 id="modal-h2"></h2>
+    <p  id="modal-p"></p>
+    <ul id="modal-ul"></ul>
+  </div>
+</div>
+
+
+
+
+
+
+
+  
+  
+
+
+
+
+  
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    <script id="__config" type="application/json">{"base": "../../../../..", "features": ["content.code.copy", "navigation.indexes", "navigation.tabs", "navigation.tabs.sticky"], "search": "../../../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    
+    
+      <script src="../../../../../assets/javascripts/bundle.8fd75fb4.min.js"></script>
+      
+        <script src="../../../../../javascripts/modal.js"></script>
+      
+    
+  </body>
+</html>

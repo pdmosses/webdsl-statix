@@ -1,0 +1,154 @@
+.stx .keyword {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .identifier {
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .string {
+  color: rgb(0 0 255);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .number {
+  color: rgb(0 128 0);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .var {
+  color: rgb(139 69 19);
+  font-weight: normal;
+  font-style: italic;
+}
+.stx .operator {
+  color: rgb(0 0 230);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .layout {
+  color: rgb(63 127 95);
+  font-weight: normal;
+  font-style: italic;
+}
+.stx .sort_Id {
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .sort_ConstraintId {
+  color: rgb(0 0 109);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_NsDecl, .stx .cons_NsDecl > * > .token {
+  color: rgb(108 113 196);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_NamespaceQuery, .stx .cons_NamespaceQuery > * > .token {
+  color: rgb(108 113 196);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_NamespaceFilter, .stx .cons_NamespaceFilter > * > .token {
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_NamespaceMin, .stx .cons_NamespaceMin > * > .token {
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_StxOccurrence, .stx .cons_StxOccurrence > * > .token {
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_Closure, .stx .cons_Closure > * > .token {
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_Var, .stx .cons_Var > * > .token {
+  color: rgb(101 123 131);
+  font-weight: normal;
+  font-style: italic;
+}
+.stx .sort_ID {
+  color: rgb(88 110 117);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_Label, .stx .cons_Label > * > .token {
+  color: rgb(88 110 117);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_Str, .stx .cons_Str > * > .token {
+  color: rgb(0 128 0);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_SortDecl, .stx .cons_SortDecl > * > .token {
+  color: rgb(0 0 0);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_SortAlias, .stx .cons_SortAlias > * > .token {
+  color: rgb(0 0 0);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_IntSort, .stx .cons_IntSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_StringSort, .stx .cons_StringSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_PathSort, .stx .cons_PathSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_LabelSort, .stx .cons_LabelSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_OccurrenceSort, .stx .cons_OccurrenceSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_ScopeSort, .stx .cons_ScopeSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_AstIdSort, .stx .cons_AstIdSort > * > .token {
+  color: rgb(127 0 85);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_SimpleSort, .stx .cons_SimpleSort > * > .token {
+  color: rgb(0 0 0);
+  font-weight: normal;
+  font-style: normal;
+}
+.stx .cons_OpDecl, .stx .cons_OpDecl > * > .token {
+  color: rgb(7 54 66);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_Op, .stx .cons_Op > * > .token {
+  color: rgb(7 54 66);
+  font-weight: bold;
+  font-style: normal;
+}
+.stx .cons_Text, .stx .cons_Text > * > .token {
+  color: rgb(181 137 0);
+  font-weight: normal;
+  font-style: normal;
+}

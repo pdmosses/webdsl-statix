@@ -1,0 +1,52 @@
+/* A redundant outermost #modal element is ignored */
+
+/* Modal Content/Box */
+#modal-content {
+  display: none;
+  position: fixed;
+  left: 50%;
+  top: 5rem;
+  z-index: 5; /* Header of the page has z-index: 4 */
+  transform: translate(-50%, 0);
+  background-color: var(--md-default-bg-color);
+  padding: 20px;
+  border: 1px solid var(--md-code-fg-color);
+  width: fit-content;
+  max-width: 30rem;
+}
+
+#modal-content h2 {
+  margin-top: 0;
+  padding-right: 2em;
+  white-space: nowrap;
+}
+
+#modal-content h2 code {
+  padding-left: 0;
+}
+
+#modal-content ul li a {
+  font-family: var(--md-code-font);
+}
+
+#modal-content ul li a:hover,
+#modal-content ul li a:focus {
+  color: var(--md-accent-fg-color);
+  text-decoration: underline;
+}
+
+/* The Close Button */
+#modal-close {
+  color: var(--md-code-fg-color);
+  float: right;
+  margin-top: -0.5rem;
+  font-size: 1.25rem;
+}
+
+#modal-close:hover,
+#modal-close:focus {
+  color: var(--md-accent-fg-color);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: bold;
+}
